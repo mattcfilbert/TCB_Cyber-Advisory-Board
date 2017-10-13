@@ -54,10 +54,9 @@ Styles for CAB site
   width: 100%;
 }
 
-/*.holder-container {
+.holder-container {
   display: flex!important;
   flex-direction: row!important;
-  align-items: center!important;
   justify-content: center!important;
   width: 100%;
 }
@@ -131,7 +130,7 @@ Styles for CAB site
 
 .view_more {
   color: red;
-}*/
+}
 
 /*--------------------------------------------------------------
 1.0 Normalize
