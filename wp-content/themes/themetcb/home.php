@@ -25,9 +25,11 @@ $wpb_all_query = new WP_Query(array(
 <?php if ( $wpb_all_query->have_posts() ) : ?>
     <!-- the loop -->
     <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+      <div id="our_latest_news">
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
+        <h5><a class="author_name" href="<?php the_permalink(); ?>"> < -- First Name Last Name --> </a></h5>
+      </div>
     <?php endwhile; ?>
     <!-- end of the loop -->
     <?php wp_reset_postdata(); ?>
@@ -35,8 +37,10 @@ $wpb_all_query = new WP_Query(array(
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-<a href="/category/latest">VIEW MORE</a>
+<a href="/category/latest" class="view_more">VIEW MORE</a>
   </div>
+
+  <!-- cyber advisor columns -->
   <div class='col' id="cab">
     <h1><a href="/category/cab">CYBER ADVISOR COLUMNS</a></h1>
     <?php $wpb_all_query = new WP_Query(array(
