@@ -1,12 +1,1 @@
 .htaccess
-wp-admin/
-wp-content/mu-plugins/gd-system-plugin.php
-wp-content/mu-plugins/
-wp-includes/
-wp-*.php
-!wp-config.php
-index.php
-gd-config.php
-.DS_Store
-wp-content/.DS_Store
-wp-content/themes/.DS_Store
