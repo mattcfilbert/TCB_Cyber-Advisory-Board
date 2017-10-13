@@ -216,7 +216,7 @@ $wpb_all_query = new WP_Query(array(
     <p>More Text here to click <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
   </div>
   <div class="">
-    <h3>How to Subscribe</h3>
+    <h3>Tell Us Your Thoughts</h3>
     <p>Tell us how great we are --> <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
   </div>
 </div>
