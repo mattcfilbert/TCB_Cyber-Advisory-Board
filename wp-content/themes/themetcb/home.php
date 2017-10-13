@@ -10,7 +10,7 @@
 
     <div class="holder-container">
     <div class='col' id="recent-news">
-      <h1><a href="/category/latest">OUR LATEST NEWS</a></h1>
+      <h1><a href="/category/latest">OUR LATEST Reporting</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
@@ -29,7 +29,7 @@
         <div id="our_latest_news">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <h5><a class="author_name" href="<?php the_permalink(); ?>"> < -- First Name Last Name --> </a></h5>
+          <h5><a class="author_name" href="<?php the_permalink(); ?>"> Levi Maxey </a></h5>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -45,28 +45,29 @@
     <!-- cyber advisor columns -->
     <div class='col' id="cab">
       <h1><a href="/category/cab">CYBER ADVISOR COLUMNS</a></h1>
+
       <?php $wpb_all_query = new WP_Query(array(
-    'post_type' =>'post',
-    'category_name' => 'cab',
-    'post_status' =>'publish',
-    'posts_per_page' => 4,
-    'orderby' => 'date',
-    'order' => 'DESC'
-    ));
-    ?>
+        'post_type' =>'post',
+        'category_name' => 'cab',
+        'post_status' =>'publish',
+        'posts_per_page' => 4,
+        'orderby' => 'date',
+        'order' => 'DESC'
+      ));
+      ?>
+
   <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
+        <div id="cyber-advisor-column-entry">
+          <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( '' ); ?> </a>
           <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
-          <p><?php echo wp_trim_words( get_the_content(), 20, '...' );?> </p>
+          <h5 class="author_name">General Michael Hayden</h5>
+          <p><?php echo wp_trim_words( get_the_content(), 30, '...' );?> </p>
+        </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
-
-
 
       <?php wp_reset_postdata(); ?>
 
