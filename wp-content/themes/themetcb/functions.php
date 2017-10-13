@@ -1566,6 +1566,22 @@ function is_url_exist($url){
 //     return str_replace('%region%', $taxonomy_slug, $permalink);
 // }
 
+function people_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'authors',
+		'post',
+		array(
+			'label' => __( 'Authors' ),
+			'rewrite' => array( 'slug' => 'author' ),
+			'capabilities' => array(
+				'assign_terms' => 'edit_guides',
+				'edit_terms' => 'publish_guides'
+			)
+		)
+	);
+}
+add_action( 'init', 'people_init' );
 
 function getEvent(){
 	$time = time();

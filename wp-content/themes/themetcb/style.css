@@ -4622,7 +4622,7 @@ object {
     border-radius: 0px !important;
 }
 
-.post_article .views-row .brief-info .timestamp {
+.timestamp {
     font-family: 'Ovo', serif;
     font-weight: 400;
     font-size: 15px;
