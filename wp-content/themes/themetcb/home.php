@@ -9,7 +9,7 @@
 <div class="site-container">
 <div class="holder-container">
   <div class='col' id="recent-news">
-    <h1><a href="/category/latest">Our Latest News</a></h1>
+    <h1><a href="/category/latest">OUR LATEST NEWS</a></h1>
     <?php
 // the query
 $wpb_all_query = new WP_Query(array(
@@ -38,7 +38,7 @@ $wpb_all_query = new WP_Query(array(
 <a href="/category/latest">VIEW MORE</a>
   </div>
   <div class='col' id="cab">
-    <h1><a href="/category/cab">CAB Stuff</a></h1>
+    <h1><a href="/category/cab">CYBER ADVISOR COLUMNS</a></h1>
     <?php $wpb_all_query = new WP_Query(array(
   'post_type' =>'post',
   'category_name' => 'cab',
@@ -71,7 +71,7 @@ $wpb_all_query = new WP_Query(array(
 
   <!-- Threats -->
   <div class='col' id="threat">
-    <h1><a href="/category/threat">Threats!</a></h1>
+    <h1><a href="/category/threat">THREATS</a></h1>
     <?php
 // the query
 $wpb_all_query = new WP_Query(array(
@@ -107,7 +107,7 @@ $wpb_all_query = new WP_Query(array(
   <!-- Cipher Take -->
   <div class="holder-container">
     <div class="col" id="ciphertake">
-      <h1><a href="/category/ciphertake">Cipher Take</a></h1>
+      <h1><a href="/category/ciphertake">CIPHER TAKE</a></h1>
       <div class="row">
 
 <?php
@@ -142,7 +142,7 @@ $wpb_all_query = new WP_Query(array(
 <!-- The White Papers -->
 <div class="holder-container">
   <div class="col">
-    <h1><a href="/category/whitepaper">White Papers</a></h1>
+    <h1><a href="/category/whitepaper">WHITE PAPERS</a></h1>
     <div class="holder-container">
 
 <?php
@@ -223,7 +223,7 @@ $wpb_all_query = new WP_Query(array(
 
 <!-- Cyber Briefing Book -->
   <div class="">
-    <h1><a href="/category/whitepaper">Your Cyber Briefing Book</a></h1>
+    <h1><a href="/category/whitepaper">YOUR CIPHER BRIEFING BOOK</a></h1>
   </div>
   <div class="holder-container">
   <?php
