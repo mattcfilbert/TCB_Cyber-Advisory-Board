@@ -212,6 +212,12 @@ $wpb_all_query = new WP_Query(array(
     <p>to subscribe click here <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
   </div>
   <div class="">
+    <h3>Annual Corporate Sponsorship</h3>
+    <p>More Text here to click <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
+  </div>
+  <div class="">
+    <h3>How to Subscribe</h3>
+    <p>Tell us how great we are --> <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
   </div>
 </div>
 
