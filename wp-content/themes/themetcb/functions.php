@@ -2860,6 +2860,9 @@ function create_posttype() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'whitepaper'),
+						'supports' => array(
+							'title', 'editor', 'thumbnail', 'revisions'
+						),
         )
     );
 }
