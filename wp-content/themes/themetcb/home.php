@@ -157,8 +157,7 @@
 
   <?php
   $wpb_all_query = new WP_Query(array(
-    'post_type'=> 'post',
-    'category_name' => 'whitepaper',
+    'post_type'=> 'whitepapers',
     'post_status'=> 'publish',
     'posts_per_page'=> 6
   ));
