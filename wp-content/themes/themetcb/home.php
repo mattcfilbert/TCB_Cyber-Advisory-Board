@@ -14,7 +14,7 @@
 // the query
 $wpb_all_query = new WP_Query(array(
   'post_type' =>'post',
-  'category_name' => 'latest',
+  'category_name' => 'our latest reporting',
   'post_status' =>'publish',
   'posts_per_page' => 4,
   'orderby' => 'date',
@@ -41,7 +41,7 @@ $wpb_all_query = new WP_Query(array(
     <h1><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
     <?php $wpb_all_query = new WP_Query(array(
   'post_type' =>'post',
-  'category_name' => 'cab',
+  'category_name' => 'cyber advisor columns',
   'post_status' =>'publish',
   'posts_per_page' => 4,
   'orderby' => 'date',
@@ -76,7 +76,7 @@ $wpb_all_query = new WP_Query(array(
 // the query
 $wpb_all_query = new WP_Query(array(
   'post_type'=>'post',
-  'category_name' => 'threat',
+  'category_name' => 'threat report',
   'post_status'=>'publish',
   'posts_per_page'=> 4
 ));
