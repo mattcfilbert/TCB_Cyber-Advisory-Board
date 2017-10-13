@@ -19,7 +19,7 @@
                 <?php echo date("l F d, Y", time())?>
             </div>
             <div class="topNewsletter">
-                <a href="/subscribe/">Get Our NEWSLETTER</a>
+                <a href="https://www.thecipherbrief.com/subscribe">Get Our NEWSLETTER</a>
             </div>
 	    </div><!-- #top -->
 	</div><!-- .wrap -->
