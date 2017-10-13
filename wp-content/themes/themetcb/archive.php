@@ -34,22 +34,33 @@ the_custom_above_banner();
 
 
                 <div class="cab">
-                  <h1>CAB Stuff</h1>
                   <?php
               // the query
               $wpb_all_query = new WP_Query(array('post_type'=>'post', 'category_name' => "{$cat}", 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
 
               <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-              <ul>
+
 
                   <!-- the loop -->
                   <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-                      <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                    <div class="brief-info">
+
+
+                      <?php $posttime = timeLink(); ?>
+                      <div class='timestamp'<?php echo $posttime ?></div>
+                    </div>
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="brief-contain">
+                        <?php the_post_thumbnail('thecipherbrief-featured-image'); ?>
+                        <?php the_title(); ?>
+                        <p><?php the_truncated_post(200) ?></p>
+                      </div>
+                    </a>
                   <?php endwhile; ?>
                   <!-- end of the loop -->
 
-              </ul>
+
 
                   <?php wp_reset_postdata(); ?>
 

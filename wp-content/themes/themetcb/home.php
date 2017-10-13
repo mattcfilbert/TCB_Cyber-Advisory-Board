@@ -35,10 +35,11 @@
       <!-- end of the loop -->
       <?php wp_reset_postdata(); ?>
 
+
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/latest" class="view_more">VIEW MORE</a>
+  <a href="/category/our-latest-reporting" class="view_more">VIEW MORE</a>
     </div>
 
     <!-- cyber advisor columns -->
@@ -66,6 +67,7 @@
       <!-- end of the loop -->
 
 
+
       <?php wp_reset_postdata(); ?>
 
   <?php else : ?>
@@ -73,6 +75,7 @@
   <?php endif; ?>
   <a href="/category/cab">VIEW MORE</a>
     </div>
+
 
     <!-- Threats -->
     <div class='col' id="threats">
@@ -109,7 +112,9 @@
     </div>
   </div>
 
+
     <!-- Cipher Take -->
+
     <div class="holder-container">
       <div class="col" id="ciphertake">
         <h1><a href="/category/ciphertake">CIPHER TAKE</a></h1>
