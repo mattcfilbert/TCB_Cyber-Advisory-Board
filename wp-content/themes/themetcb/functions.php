@@ -2846,3 +2846,22 @@ function the_custom_footer_banner(){
     }
     echo $result;
 }
+
+// Our custom post type function
+function create_posttype() {
+
+    register_post_type( 'whitepapers',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'White Papers' ),
+                'singular_name' => __( 'White Papers' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'whitepaper'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
