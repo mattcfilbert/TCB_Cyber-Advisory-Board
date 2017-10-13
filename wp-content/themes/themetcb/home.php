@@ -9,7 +9,7 @@
 <div class="site-container">
 <div class="holder-container">
   <div class='col' id="recent-news">
-    <h1><a href="/category/latest">OUR LATEST NEWS</a></h1>
+    <h1><a href="/category/our-latest-reporting">OUR LATEST NEWS</a></h1>
     <?php
 // the query
 $wpb_all_query = new WP_Query(array(
@@ -35,10 +35,10 @@ $wpb_all_query = new WP_Query(array(
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-<a href="/category/latest">VIEW MORE</a>
+<a href="/category/our-latest-reporting">VIEW MORE</a>
   </div>
   <div class='col' id="cab">
-    <h1><a href="/category/cab">CYBER ADVISOR COLUMNS</a></h1>
+    <h1><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
     <?php $wpb_all_query = new WP_Query(array(
   'post_type' =>'post',
   'category_name' => 'cab',
@@ -66,12 +66,12 @@ $wpb_all_query = new WP_Query(array(
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-<a href="/category/cab">VIEW MORE</a>
+<a href="/category/cyber-advisor-columns">VIEW MORE</a>
   </div>
 
   <!-- Threats -->
   <div class='col' id="threat">
-    <h1><a href="/category/threat">THREATS</a></h1>
+    <h1><a href="/category/threat-report">THREATS</a></h1>
     <?php
 // the query
 $wpb_all_query = new WP_Query(array(
@@ -100,14 +100,14 @@ $wpb_all_query = new WP_Query(array(
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-<a href="/category/threat">VIEW MORE</a>
+<a href="/category/threat-report">VIEW MORE</a>
   </div>
 </div>
 
   <!-- Cipher Take -->
   <div class="holder-container">
     <div class="col" id="ciphertake">
-      <h1><a href="/category/ciphertake">CIPHER TAKE</a></h1>
+      <h1><a href="/category/cipher-take">CIPHER TAKE</a></h1>
       <div class="row">
 
 <?php
@@ -142,7 +142,7 @@ $wpb_all_query = new WP_Query(array(
 <!-- The White Papers -->
 <div class="holder-container">
   <div class="col">
-    <h1><a href="/category/whitepaper">WHITE PAPERS</a></h1>
+    <h1><a href="/category/white-papers">WHITE PAPERS</a></h1>
     <div class="holder-container">
 
 <?php
