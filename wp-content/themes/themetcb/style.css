@@ -12,7 +12,7 @@ Text Domain: thecipherbrief
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-0.0 CAB Mircrosite
+0.0 CAB Microsite
 1.0 Normalize
 2.0 Accessibility
 3.0 Alignments
@@ -46,7 +46,13 @@ Text Domain: thecipherbrief
 0.0 CAB Microsite
 Styles for CAB site
 --------------------------------------------------------------*/
-
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 .holder-container {
   display: flex!important;
@@ -59,7 +65,18 @@ Styles for CAB site
 .col {
   display: flex!important;
   flex-direction: column!important;
-  width: 30%
+  width: 30%;
+}
+
+#ciphertake {
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-around;
 }
 
 #recent-news, #cab {
