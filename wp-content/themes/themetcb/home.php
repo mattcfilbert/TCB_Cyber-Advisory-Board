@@ -73,7 +73,7 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/cyber-advisor-columns">VIEW MORE</a>
+  <a href="/category/cyber-advisor-columns" class="view_more">VIEW MORE</a>
     </div>
 
 
@@ -108,7 +108,7 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/threat-report">VIEW MORE</a>
+  <a href="/category/threat-report" class="view_more">VIEW MORE</a>
     </div>
   </div>
 

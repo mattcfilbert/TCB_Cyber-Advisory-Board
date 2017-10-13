@@ -61,6 +61,15 @@ Styles for CAB site
   width: 100%;
 }
 
+.timestamp {
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #077cc2;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
 .col {
   display: flex!important;
   flex-direction: column!important;
