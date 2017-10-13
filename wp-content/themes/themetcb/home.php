@@ -141,7 +141,7 @@ $wpb_all_query = new WP_Query(array(
 
 <!-- The White Papers -->
 <div class="holder-container">
-  <div class="col">
+  <div class="col whitepaper">
     <h1><a href="/category/whitepaper">WHITE PAPERS</a></h1>
     <div class="holder-container">
 
