@@ -10,12 +10,13 @@
 
     <div class="holder-container">
     <div class='col' id="recent-news">
-      <h1><a href="/category/latest">OUR LATEST Reporting</a></h1>
+
+      <h1><a href="/category/our-latest-reporting">OUR LATEST NEWS</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
     'post_type' =>'post',
-    'category_name' => 'latest',
+    'category_name' => 'our-latest-reporting',
     'post_status' =>'publish',
     'posts_per_page' => 4,
     'orderby' => 'date',
@@ -44,17 +45,17 @@
 
     <!-- cyber advisor columns -->
     <div class='col' id="cab">
-      <h1><a href="/category/cab">CYBER ADVISOR COLUMNS</a></h1>
 
+      <h1><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
       <?php $wpb_all_query = new WP_Query(array(
         'post_type' =>'post',
-        'category_name' => 'cab',
+        'category_name' => 'cyber advisor columns',
         'post_status' =>'publish',
         'posts_per_page' => 4,
         'orderby' => 'date',
         'order' => 'DESC'
       ));
-      ?>
+    ?>
 
   <?php if ( $wpb_all_query->have_posts() ) : ?>
 
@@ -74,18 +75,18 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/cab">VIEW MORE</a>
+  <a href="/category/cyber-advisor-columns" class="view_more">VIEW MORE</a>
     </div>
 
 
     <!-- Threats -->
     <div class='col' id="threats">
-      <h1><a href="/category/threat">THREATS</a></h1>
+      <h1><a href="/category/threat-report">THREATS</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
     'post_type'=>'post',
-    'category_name' => 'threat',
+    'category_name' => 'threat report',
     'post_status'=>'publish',
     'posts_per_page'=> 4
   ));
@@ -109,7 +110,7 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/threat">VIEW MORE</a>
+  <a href="/category/threat-report" class="view_more">VIEW MORE</a>
     </div>
   </div>
 
