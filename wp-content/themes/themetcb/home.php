@@ -67,7 +67,7 @@
           </div>
           <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
-          <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p>
+          <!-- <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p> -->
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -138,7 +138,7 @@
               <!-- the loop -->
               <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                 <div class="whitepaper-entry">
-                  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                  <h3><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 5, '...'); ?></a></h3>
                   <h5>By Author Name</h5>
                 </div>
               <?php endwhile; ?>

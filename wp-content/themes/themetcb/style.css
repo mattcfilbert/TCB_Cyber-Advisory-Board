@@ -84,7 +84,6 @@ h3 {
 }
 
 .third-section {
-  border: 1px solid red;
   width: 100%;
 }
 
@@ -119,7 +118,7 @@ h3 {
   width: 50%;
   color: white;
   background-color: #000e31;
-  border: 1px solid blue;
+  overflow: hidden;
 }
 
 .whitepaper-entry {
@@ -128,11 +127,13 @@ h3 {
   height: 50px;
   flex-wrap: wrap;
   color: white;
+  text-overflow: ellipsis;
 }
 
 .whitepaper-entry a {
   color: white;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .whitepaper-entry h5 {
