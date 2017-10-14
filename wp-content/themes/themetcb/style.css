@@ -142,6 +142,10 @@ Styles for CAB site
   color: red;
 }
 
+.search-block {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
