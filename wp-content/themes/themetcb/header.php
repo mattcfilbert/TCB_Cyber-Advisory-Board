@@ -42,7 +42,7 @@
 		<div class="col-mdws-2 baner_content_center">
 				<p>SIGN UP FOR THE DAILY NEWSLETTER FOR MORE EXPERT ANALYSIS  & COMMENTARY</p>
 				<span class="header_baner_btn">
-					<a href="/subscribe" class="sumome-smartbar-button">SIGN UP</a>
+					<a href="https://www.thecipherbrief.com/subscribe" class="sumome-smartbar-button">SIGN UP</a>
 				</span>
 		</div>
 		<div class="col-mdws-3">
