@@ -174,8 +174,11 @@ h3 {
 }
 
 
-.search-block {
-  display: none;
+div.search-block {
+    float: left;
+    padding: 9px 10px 9px 0px;
+    text-align: left;
+    display: none;
 }
 
 .view_more {
@@ -1856,11 +1859,6 @@ a:hover .nav-title,
     font-weight: 600;
 }
 
-div.search-block {
-    float: left;
-    padding: 9px 10px 9px 0px;
-    text-align: left;
-}
 
 div.search-block form input.search-field {
     color: #9d9fa2;
