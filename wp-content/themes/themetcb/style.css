@@ -181,6 +181,11 @@ div.search-block {
     display: none;
 }
 
+.inner.center {
+    width: 72% !important;
+    margin: 0 auto;
+}
+
 .view_more {
   margin-top: 5vh;
   color: #d81e3b;
@@ -4608,9 +4613,9 @@ object {
     border: none!important;
 }
 
-.post_article {
+/*.post_article {
     float: left;
-}
+}*/
 
 .post_expert_ajax {
     float: left;
