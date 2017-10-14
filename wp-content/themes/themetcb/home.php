@@ -67,7 +67,7 @@
           </div>
           <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
-          <p><?php echo wp_trim_words( get_the_content(), 30, '...' );?> </p>
+          <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -82,7 +82,7 @@
 
 
     <!-- Threats -->
-    <div class='col' id="threats">
+    <div class='col' id="threat-report">
       <h1 class="col-title"><a href="/category/threat-report">THREAT Report</a></h1>
       <?php
   // the query
@@ -90,7 +90,7 @@
     'post_type'=>'post',
     'category_name' => 'threat report',
     'post_status'=>'publish',
-    'posts_per_page'=> 4
+    'posts_per_page'=> 8
   ));
     ?>
 
@@ -100,8 +100,10 @@
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+        <div class="threat-report-entry">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <h5><a class="author_name" href="<?php the_permalink(); ?>"> Wesley Morgan </a></h5>
+        </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
 
@@ -115,74 +117,45 @@
     </div>
   </div>
 
+  <div class="third-section">
+    <!-- The White Papers -->
+    <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
+    <div class="vert-container">
+      <div class="holder-container">
+        <div id="whitepaper">
+          <?php
+          $wpb_all_query = new WP_Query(array(
+            'post_type'=> 'whitepapers',
+            'post_status'=> 'publish',
+            'posts_per_page'=> 6,
+            'orderby' => 'date',
+            'order' => 'DESC'
+          ));
+            ?>
 
-    <!-- Cipher Take -->
+          <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-    <div class="holder-container">
-      <div class="col" id="ciphertake">
-        <h1 class="col-title"><a href="/category/ciphertake">CIPHER TAKE</a></h1>
-        <div class="row">
+              <!-- the loop -->
+              <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+                <div class="whitepaper-entry">
+                  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                  <h5>By Author Name</h5>
+                </div>
+              <?php endwhile; ?>
+              <!-- end of the loop -->
 
-  <?php
-    $wpb_all_query = new WP_Query(array(
-      'post_type'=>'post',
-      'category_name' => 'ciphertake',
-      'post_status'=>'publish',
-      'posts_per_page'=> 2
-    ));
-      ?>
+              <?php wp_reset_postdata(); ?>
 
-    <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-        <!-- the loop -->
-        <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-          <div class="col" id="ciphertake">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
-          </div>
-        <?php endwhile; ?>
-        <!-- end of the loop -->
-
-        <?php wp_reset_postdata(); ?>
-
-    <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    <?php endif; ?>
+          <?php else : ?>
+              <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+          <?php endif; ?>
+        </div>
+      </div>
+      <div class="holder-container">
+        <p>other sections go here</p>
       </div>
     </div>
-  </div>
 
-  <!-- The White Papers -->
-  <div class="holder-container">
-    <div class="col whitepaper">
-      <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
-      <div class="holder-container">
-
-  <?php
-  $wpb_all_query = new WP_Query(array(
-    'post_type'=> 'whitepapers',
-    'post_status'=> 'publish',
-    'posts_per_page'=> 6
-  ));
-    ?>
-
-  <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-      <!-- the loop -->
-      <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-        <div class="col">
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <h5>Author Name</h5>
-        </div>
-      <?php endwhile; ?>
-      <!-- end of the loop -->
-
-      <?php wp_reset_postdata(); ?>
-
-  <?php else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-  <?php endif; ?>
-    </div>
   </div>
 
     <div>
@@ -267,6 +240,42 @@
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
   </div>
+
+  <!-- Cipher Take -->
+
+  <div class="holder-container">
+    <div class="col" id="ciphertake">
+      <h1 class="col-title"><a href="/category/ciphertake">CIPHER TAKE</a></h1>
+      <div class="row">
+
+<?php
+  $wpb_all_query = new WP_Query(array(
+    'post_type'=>'post',
+    'category_name' => 'ciphertake',
+    'post_status'=>'publish',
+    'posts_per_page'=> 2
+  ));
+    ?>
+
+  <?php if ( $wpb_all_query->have_posts() ) : ?>
+
+      <!-- the loop -->
+      <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+        <div class="col" id="ciphertake">
+          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
+        </div>
+      <?php endwhile; ?>
+      <!-- end of the loop -->
+
+      <?php wp_reset_postdata(); ?>
+
+  <?php else : ?>
+      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+    </div>
+  </div>
+</div>
 
 </div>
 
