@@ -11,12 +11,12 @@
     <div class="holder-container">
     <div class='col' id="recent-news">
 
-      <h1><a href="/category/our-latest-reporting">OUR LATEST NEWS</a></h1>
+      <h1 class="col-title"><a href="/category/our-latest-reporting">OUR LATEST REPORTING</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
     'post_type' =>'post',
-    'category_name' => 'our-latest-reporting',
+    'category_name' => 'our latest reporting',
     'post_status' =>'publish',
     'posts_per_page' => 4,
     'orderby' => 'date',
@@ -30,7 +30,7 @@
         <div id="our_latest_news">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <h5><a class="author_name" href="<?php the_permalink(); ?>"> Levi Maxey </a></h5>
+          <h5><a class="author_name" href="<?php the_permalink(); ?>"> The Cipher Brief Staff </a></h5>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -40,13 +40,13 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/our-latest-reporting" class="view_more">VIEW MORE</a>
+  <!-- <a href="/category/our-latest-reporting" class="view_more">VIEW MORE</a> -->
     </div>
 
     <!-- cyber advisor columns -->
     <div class='col' id="cab">
 
-      <h1><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
+      <h1 class="col-title"><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
       <?php $wpb_all_query = new WP_Query(array(
         'post_type' =>'post',
         'category_name' => 'cyber advisor columns',
@@ -62,7 +62,9 @@
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div id="cyber-advisor-column-entry">
-          <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( '' ); ?> </a>
+          <div class="cyber-img">
+            <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( '' ); ?> </a>
+          </div>
           <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
           <p><?php echo wp_trim_words( get_the_content(), 30, '...' );?> </p>
@@ -75,13 +77,13 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/cyber-advisor-columns" class="view_more">VIEW MORE</a>
+  <!-- <a href="/category/cyber-advisor-columns" class="view_more">VIEW MORE</a> -->
     </div>
 
 
     <!-- Threats -->
     <div class='col' id="threats">
-      <h1><a href="/category/threat-report">THREATS</a></h1>
+      <h1 class="col-title"><a href="/category/threat-report">THREAT Report</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
@@ -98,9 +100,8 @@
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
+          <h5><a class="author_name" href="<?php the_permalink(); ?>"> Wesley Morgan </a></h5>
       <?php endwhile; ?>
       <!-- end of the loop -->
 
@@ -110,7 +111,7 @@
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
-  <a href="/category/threat-report" class="view_more">VIEW MORE</a>
+  <!-- <a href="/category/threat-report" class="view_more">VIEW MORE</a> -->
     </div>
   </div>
 
@@ -119,7 +120,7 @@
 
     <div class="holder-container">
       <div class="col" id="ciphertake">
-        <h1><a href="/category/ciphertake">CIPHER TAKE</a></h1>
+        <h1 class="col-title"><a href="/category/ciphertake">CIPHER TAKE</a></h1>
         <div class="row">
 
   <?php
@@ -154,7 +155,7 @@
   <!-- The White Papers -->
   <div class="holder-container">
     <div class="col whitepaper">
-      <h1><a href="/category/whitepaper">WHITE PAPERS</a></h1>
+      <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
       <div class="holder-container">
 
   <?php
@@ -234,7 +235,7 @@
 
   <!-- Cyber Briefing Book -->
     <div class="">
-      <h1><a href="/category/whitepaper">YOUR CIPHER BRIEFING BOOK</a></h1>
+      <h1 class="col-title"><a href="/category/whitepaper">YOUR CIPHER BRIEFING BOOK</a></h1>
     </div>
     <div class="holder-container">
     <?php

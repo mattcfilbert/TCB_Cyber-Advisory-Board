@@ -46,6 +46,33 @@ Text Domain: thecipherbrief
 0.0 CAB Microsite
 Styles for CAB site
 --------------------------------------------------------------*/
+h3 {
+  font-family: 'Georgia'!important;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.col-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.col-title a {
+  text-decoration: none;
+  color: white;
+  background-color: #000e31;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.col-title a:hover {
+  color: white!important;
+}
+
 .site-container {
   display: flex;
   flex-direction: column;
@@ -63,12 +90,12 @@ Styles for CAB site
 }
 
 .timestamp {
-    font-family: 'Ovo', serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #077cc2;
-    text-transform: uppercase;
-    line-height: 30px;
+  font-family: 'Ovo', serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #077cc2;
+  text-transform: uppercase;
+  line-height: 30px;
 }
 
 .col {
@@ -90,6 +117,10 @@ Styles for CAB site
   justify-content: space-around;
 }
 
+#our_latest_news h3, #our_latest_news h5 {
+  text-align: left!important;
+}
+
 #recent-news, #cab {
   border-right: 1px #C8C8C8 solid;
   padding-right: 2%;
@@ -100,29 +131,18 @@ Styles for CAB site
   margin: 5% 0;
 }
 
-#cyber-advisor-column-entry a, h3, h5, img {
-  text-align: center;
+#cyber-advisor-column-entry a, h3, h5 {
+  text-align: center!important;
 }
 
-.col h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
+.site-container .cyber-advisor-column-entry p {
+  font-family: 'replica-pro'!important;
 }
 
-.col h1 a {
-  text-decoration: none;
-  color: white;
-  background-color: #000e31;
-  padding: 15px;
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  -webkit-transition: background-color 500ms ease-in-out;
-  -moz-transition: background-color 500ms ease-in-out;
-  -ms-transition: background-color 500ms ease-in-out;
-  -o-transition: background-color 500ms ease-in-out;
-  transition: background-color 500ms ease-in-out;
+.cyber-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #whitepaper h1 a {
@@ -130,10 +150,6 @@ Styles for CAB site
   transition: none;
   background-color: white;
   text-align: left;
-}
-
-.col h1 a:hover {
-    background-color: #300000;
 }
 
 #whitepaper h1 a:hover {
@@ -155,7 +171,6 @@ Styles for CAB site
 
 #cyber-advisor-column-entry .author_name {
   color: red;
-  /*text-align: center;*/
 }
 
 .view_more {
