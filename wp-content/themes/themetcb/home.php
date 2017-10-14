@@ -48,8 +48,7 @@
 
       <h1 class="col-title"><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
       <?php $wpb_all_query = new WP_Query(array(
-        'post_type' =>'cyber advisor columns',
-        'category_name' => 'cyber advisor columns',
+        'post_type' =>'cyber advisor column',
         'post_status' =>'publish',
         'posts_per_page' => 4,
         'orderby' => 'date',
