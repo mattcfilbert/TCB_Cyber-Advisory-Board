@@ -173,6 +173,11 @@ h3 {
   color: red;
 }
 
+
+.search-block {
+  display: none;
+}
+
 .view_more {
   margin-top: 5vh;
   color: #d81e3b;
@@ -181,6 +186,7 @@ h3 {
 .view_more:hover {
   color: #d81e3b;
   text-decoration: underline;
+
 }
 
 /*--------------------------------------------------------------
