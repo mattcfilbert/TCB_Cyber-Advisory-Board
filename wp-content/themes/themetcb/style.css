@@ -244,6 +244,7 @@ h3 {
   color: red;
 }
 
+
 #threat-report h3 a {
   text-transform: none;
 }
@@ -272,6 +273,9 @@ h3 {
 .view_more:hover {
   color: #d81e3b;
   text-decoration: underline;
+
+.search-block {
+  display: none;
 }
 
 /*--------------------------------------------------------------
