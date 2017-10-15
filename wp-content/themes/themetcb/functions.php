@@ -2900,7 +2900,7 @@ function create_posttype() {
         )
 			);
 
-			register_post_type( 'column article',
+			register_post_type( 'columnarticle',
 			// CPT Options
 					array(
 							'labels' => array(
