@@ -78,6 +78,7 @@ h3 {
   background-color: white;
   color: #000e31;
   text-align: left;
+  width: fit-content;
 }
 
 
@@ -123,8 +124,8 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  height: 190px;
-  width: 50%;
+  height: 240px;
+  width: 55%;
   color: white;
   background-color: #000e31;
   overflow: hidden;
@@ -133,7 +134,8 @@ h3 {
 .whitepaper-entry {
   display: flex;
   flex-direction: column;
-  height: 50px;
+  height: 30%;
+  width: 47%;
   flex-wrap: wrap;
   color: white;
   text-overflow: ellipsis;
@@ -155,6 +157,15 @@ h3 {
 
 }
 
+.meet_board {
+  width: 25%;
+  height: 240px;
+  margin: 0 1%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid black;
+}
+
 .timestamp {
   font-family: 'Ovo', serif;
   font-weight: 400;
@@ -167,7 +178,7 @@ h3 {
 .col {
   display: flex!important;
   flex-direction: column!important;
-  width: 30%;
+  width: 32%;
   min-height: 135vh;
   margin-bottom: 5vh;
 }
@@ -223,8 +234,9 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 250px;
+  width: 200px;
   height: auto;
+  max-height: 175px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -260,7 +272,6 @@ h3 {
 }
 
 
-
 div.search-block {
     float: left;
     padding: 9px 10px 9px 0px;
@@ -271,6 +282,7 @@ div.search-block {
 .inner.center {
     width: 72% !important;
     margin: 0 auto;
+
 
 #threat-report h3 a {
   text-transform: none;
@@ -292,6 +304,13 @@ div.search-block {
   font-size: 14px;
 }
 
+.search-block {
+    float: left;
+    padding: 9px 10px 9px 0px;
+    text-align: left;
+    display: none;
+}
+
 .view_more {
   margin-top: 5vh;
   color: #d81e3b;
@@ -300,6 +319,7 @@ div.search-block {
 .view_more:hover {
   color: #d81e3b;
   text-decoration: underline;
+
 
 
 .search-block {

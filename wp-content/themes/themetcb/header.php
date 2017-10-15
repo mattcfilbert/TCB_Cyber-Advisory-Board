@@ -42,6 +42,7 @@
 		<div class="col-mdws-2 baner_content_center">
 				<p>SIGN UP FOR THE WEEKLY NEWSLETTER FOR MORE EXPERT ANALYSIS  & COMMENTARY</p>
 				<span class="header_baner_btn">
+
 					<a href="https://www.tcbconference.com/cyber-advisory-board" class="sumome-smartbar-button">SIGN UP</a>
 				</span>
 		</div>

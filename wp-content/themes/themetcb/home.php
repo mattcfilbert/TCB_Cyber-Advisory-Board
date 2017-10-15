@@ -63,9 +63,10 @@
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div id="cyber-advisor-column-entry">
           <div class="cyber-img">
-            <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( '' ); ?> </a>
+            <!-- apply custom image size made in functions.php setup -->
+            <a style="box-shadow: 2px grey;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-avatar' ); ?> </a>
           </div>
-          <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
+          <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
 
           <!-- <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p> -->
@@ -146,7 +147,7 @@
               <!-- the loop -->
               <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                 <div class="whitepaper-entry">
-                  <h3><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 5, '...'); ?></a></h3>
+                  <h3 style="text-transform: capitalize;"><a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 5, '...'); ?></a></h3>
                   <h5>By Author Name</h5>
                 </div>
               <?php endwhile; ?>
@@ -158,6 +159,39 @@
               <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
           <?php endif; ?>
         </div>
+
+        <div class="meet_board">
+          <h3 style="font-weight: bold; text-align: center; line-height: 1.2;">Meet Our Board</h3>
+          <?php
+            $wpb_all_query = new WP_Query(array(
+              'post_type'=>'post',
+              'category_name' => 'board',
+              'post_status'=>'publish',
+              'posts_per_page'=> 1
+            ));
+              ?>
+
+            <?php if ( $wpb_all_query->have_posts() ) : ?>
+
+                <!-- the loop -->
+                <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+                  <div style="padding: 2%;">
+                    <p style="font-size: 14px">
+                      <span style="float: left; width: 80px; height: auto; padding: 1.5% 2%;"> <?php the_post_thumbnail( ' ' ); ?> </span>
+                      <?php echo wp_trim_words( get_the_content(), 30, '...' );?> <br>
+                      <a href="https://www.thecipherbrief.com/cyber-advisory-board" style="text-align: center; color: red;">view the rest of the Cyber Advisory Board</a>
+                    </p>
+                  </div>
+                <?php endwhile; ?>
+                <!-- end of the loop -->
+
+                <?php wp_reset_postdata(); ?>
+
+            <?php else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+        </div>
+
       </div>
       <div class="holder-container">
         <p>other sections go here</p>
@@ -166,36 +200,6 @@
 
   </div>
 
-    <div>
-      <h3>Meet Our Board</h3>
-      <?php
-        $wpb_all_query = new WP_Query(array(
-          'post_type'=>'post',
-          'category_name' => 'board',
-          'post_status'=>'publish',
-          'posts_per_page'=> 1
-        ));
-          ?>
-
-        <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-            <!-- the loop -->
-            <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-              <div class="col">
-                <?php the_post_thumbnail( '' ); ?>
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p><?php echo wp_trim_words( get_the_content(), 100, '...' );?> </p>
-              </div>
-            <?php endwhile; ?>
-            <!-- end of the loop -->
-
-            <?php wp_reset_postdata(); ?>
-
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-            <a href="https://www.thecipherbrief.com/cyber-advisory-board">view the rest of the Cyber Advisory Board</a>
-    </div>
   </div>
 
   <!-- extraneous blocks -->
