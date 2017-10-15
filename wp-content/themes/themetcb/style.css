@@ -48,15 +48,19 @@ Styles for CAB site
 --------------------------------------------------------------*/
 h3 {
   font-family: 'Georgia'!important;
+
   font-weight: 700;
   font-size: 20px;
+
 }
 
 .col-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+
   margin-bottom: 0;
+
 }
 
 .col-title a {
@@ -69,6 +73,7 @@ h3 {
   text-decoration: none;
 }
 
+
 .third-section .col-title a {
   background-color: white;
   color: #000e31;
@@ -76,9 +81,11 @@ h3 {
   width: fit-content;
 }
 
+
 .col-title a:hover {
   color: white!important;
 }
+
 
 .third-section .col-title a:hover {
   color: #000e31!important;
@@ -87,6 +94,7 @@ h3 {
 .third-section {
   width: 100%;
 }
+
 
 .site-container {
   display: flex;
@@ -102,6 +110,7 @@ h3 {
   /*justify-content: center!important;*/
   width: 100%;
   height: auto;
+
 }
 
 .vert-container {
@@ -145,6 +154,7 @@ h3 {
 .whitepaper-entry a:hover {
   color: white;
   text-decoration: none;
+
 }
 
 .meet_board {
@@ -188,9 +198,11 @@ h3 {
   text-align: left!important;
 }
 
+
 #our_latest_news h3 {
   font-weight: 700;
 }
+
 
 #recent-news, #cab {
   border-right: 1px #C8C8C8 solid;
@@ -201,6 +213,7 @@ h3 {
 #our_latest_news, #cyber-advisor-column-entry {
   margin: 5% 0;
 }
+
 
 #cyber-advisor-column-entry a {
   font-weight: 700;
@@ -228,6 +241,7 @@ h3 {
   margin: 0 auto;
 }
 
+
 #whitepaper h1 a {
   color: #000e31;
   transition: none;
@@ -247,6 +261,7 @@ h3 {
 
 }
 
+
 #our_latest_news .author_name, #threat-report .author_name {
   color: #077cc2;
   text-align: left;
@@ -255,6 +270,19 @@ h3 {
 #cyber-advisor-column-entry .author_name {
   color: red;
 }
+
+
+div.search-block {
+    float: left;
+    padding: 9px 10px 9px 0px;
+    text-align: left;
+    display: none;
+}
+
+.inner.center {
+    width: 72% !important;
+    margin: 0 auto;
+
 
 #threat-report h3 a {
   text-transform: none;
@@ -292,6 +320,10 @@ h3 {
   color: #d81e3b;
   text-decoration: underline;
 
+
+
+.search-block {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -4710,9 +4742,9 @@ object {
     border: none!important;
 }
 
-.post_article {
+/*.post_article {
     float: left;
-}
+}*/
 
 .post_expert_ajax {
     float: left;
