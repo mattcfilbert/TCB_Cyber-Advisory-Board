@@ -2881,6 +2881,21 @@ function create_posttype() {
 						),
         )
     );
+		register_post_type( 'cyber advisor column',
+		// CPT Options
+				array(
+						'labels' => array(
+								'name' => __( 'Cyber Advisor Column' ),
+								'singular_name' => __( 'Cyber Advisor Column' )
+						),
+						'public' => true,
+						'has_archive' => true,
+						'rewrite' => array('slug' => 'cyberadvisorcolumn'),
+						'supports' => array(
+							'title', 'editor', 'thumbnail', 'revisions'
+						),
+				)
+			);
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
