@@ -48,7 +48,6 @@ Styles for CAB site
 --------------------------------------------------------------*/
 h3 {
   font-family: 'Georgia'!important;
-
   font-weight: 700;
   font-size: 20px;
 
@@ -109,6 +108,7 @@ h3 {
   flex-direction: row!important;
   /*justify-content: center!important;*/
   width: 100%;
+  margin: 10px 0 10px 0;
   height: auto;
 
 }
@@ -125,7 +125,7 @@ h3 {
   justify-content: space-between;
   padding: 10px;
   height: 240px;
-  width: 55%;
+  width: 60%;
   color: white;
   background-color: #000e31;
   overflow: hidden;
@@ -137,6 +137,7 @@ h3 {
   height: 30%;
   width: 47%;
   flex-wrap: wrap;
+  overflow: hidden;
   color: white;
   text-overflow: ellipsis;
 }
@@ -154,7 +155,6 @@ h3 {
 .whitepaper-entry a:hover {
   color: white;
   text-decoration: none;
-
 }
 
 .meet_board {
@@ -184,14 +184,20 @@ h3 {
 }
 
 #ciphertake {
-  width: 80%;
+  width: 100%;
+}
+
+#ciphertake .col-title a {
+  width: fit-content;
+  padding: 15px 30px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  width: 70%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
 }
 
 #our_latest_news h3, #our_latest_news h5 {
@@ -258,7 +264,6 @@ h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-family: 'replica-pro';
-
 }
 
 
@@ -321,9 +326,25 @@ div.search-block {
   text-decoration: underline;
 }
 
-
 .search-block {
   display: none;
+}
+
+
+#ciphertake-entry {
+  width: 47%;
+}
+
+#ciphertake-entry h3 a {
+  margin: 5px 0 15px 0;
+  color: #077cc2;
+  font-weight: bold;
+}
+
+#ciphertake-entry p {
+  margin: 10px 0 20px 0;
+  padding: 0 30px 0 0;
+  font-size: 12px;
 }
 
 body.archive.post-type-archive .newsletter-top-cta {
@@ -341,6 +362,7 @@ width: 17%;
 max-height: 115px;
 overflow: hidden;
 box-sizing: border-box;
+
 }
 
 /*--------------------------------------------------------------
