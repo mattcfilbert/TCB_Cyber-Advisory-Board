@@ -117,6 +117,42 @@
     </div>
   </div>
 
+  <!-- Cipher Take -->
+
+  <div class="holder-container">
+    <div id="ciphertake">
+      <h1 class="col-title"><a href="/category/ciphertake"> the CIPHER TAKE</a></h1>
+      <div class="row">
+
+<?php
+  $wpb_all_query = new WP_Query(array(
+    'post_type'=>'post',
+    'category_name' => 'ciphertake',
+    'post_status'=>'publish',
+    'posts_per_page'=> 2
+  ));
+    ?>
+
+  <?php if ( $wpb_all_query->have_posts() ) : ?>
+
+      <!-- the loop -->
+      <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+        <div id="ciphertake">
+          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
+        </div>
+      <?php endwhile; ?>
+      <!-- end of the loop -->
+
+      <?php wp_reset_postdata(); ?>
+
+  <?php else : ?>
+      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+    </div>
+  </div>
+</div>
+
   <div class="third-section">
     <!-- The White Papers -->
     <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
@@ -170,7 +206,7 @@
                     <p style="font-size: 14px">
                       <span style="float: left; width: 80px; height: auto; padding: 1.5% 2%;"> <?php the_post_thumbnail( ' ' ); ?> </span>
                       <?php echo wp_trim_words( get_the_content(), 30, '...' );?> <br>
-                      <a href="https://www.thecipherbrief.com/cyber-advisory-board" style="text-align: center; color: red;">view the rest of the Cyber Advisory Board</a>
+                      <a href="https://www.thecipherbrief.com/cyber-advisory-board" style=" display: block; text-align: center; color: #d52340;">view the rest of the Cyber Advisory Board</a>
                     </p>
                   </div>
                 <?php endwhile; ?>
@@ -244,41 +280,6 @@
     <?php endif; ?>
   </div>
 
-  <!-- Cipher Take -->
-
-  <div class="holder-container">
-    <div class="col" id="ciphertake">
-      <h1 class="col-title"><a href="/category/ciphertake">CIPHER TAKE</a></h1>
-      <div class="row">
-
-<?php
-  $wpb_all_query = new WP_Query(array(
-    'post_type'=>'post',
-    'category_name' => 'ciphertake',
-    'post_status'=>'publish',
-    'posts_per_page'=> 2
-  ));
-    ?>
-
-  <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-      <!-- the loop -->
-      <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-        <div class="col" id="ciphertake">
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?> </p>
-        </div>
-      <?php endwhile; ?>
-      <!-- end of the loop -->
-
-      <?php wp_reset_postdata(); ?>
-
-  <?php else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-  <?php endif; ?>
-    </div>
-  </div>
-</div>
 
 </div>
 

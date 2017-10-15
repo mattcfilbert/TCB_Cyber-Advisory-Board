@@ -177,6 +177,11 @@ h3 {
   width: 80%;
 }
 
+#ciphertake .col-title a {
+  width: fit-content;
+  padding: 15px 30px; 
+}
+
 .row {
   display: flex;
   flex-direction: row;
