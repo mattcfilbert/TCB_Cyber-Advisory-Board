@@ -31,16 +31,16 @@
         $posttime = timeLink();
             echo '<div class="single-featured-image-header'.($post->post_type ? ' '.$post->post_type : '').'">';
 
-        
+
             ?>
             <div class="views-field views-field-field-author">
                 <div class="field-content">
-                    <span class="date"><?php echo $posttime; ?></span> | <span class="author"><?php echo $author[0]->name;?></span>
+                    <span class="date"><?php echo $posttime; ?></span> | <span class="author"> Cyber Advisor Column <?php echo $author[0]->name;?></span>
                 </div>
             </div>
             <?php
             $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-            echo '<div class="image_social">';
+            echo '<div class="image_social" style="display: none;">';
 //                echo '<a onclick="return loadpopupSocial(this);" rel="external nofollow" class="ss-button-email" href="http://www.sharethis.com/share?url='.urlencode($current_url).'&title='.urlencode($title).'&summary='.urlencode($title).'&img='.$image[0].'&pageInfo=%7B%22hostname%22%3A%22'.$_SERVER['SERVER_NAME'].'%22%2C%22publisher%22%3A%22%22%7D" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(132, 132, 132); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" title="Email" alt="Email" class="at-icon at-icon-email" style="width: 32px; height: 32px;"><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a>';
 //                echo '<a onclick="return loadpopupSocial(this,\'linkedin\');" rel="external nofollow" class="ss-button-linkedin" href="http://www.linkedin.com/shareArticle"><span class="at-icon-wrapper" style="background-color: rgb(0, 119, 181); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" title="LinkedIn" alt="LinkedIn" class="at-icon at-icon-linkedin" style="width: 32px; height: 32px;"><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a>';
 //                echo '<a onclick="return loadpopupSocial(this,\'twitter\');" rel="external nofollow" class="ss-button-twitter" href="http://twitter.com/intent/tweet/" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(29, 161, 242); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" title="Twitter" alt="Twitter" class="at-icon at-icon-twitter" style="width: 32px; height: 32px;"><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a>';
@@ -65,11 +65,11 @@
     <div class="block block-block newsletter-top-cta block-even clearfix">
         <div class="content clearfix">
             <div class="promo-left">
-                <h2>The Newsletter</h2>
-                <p>Get exclusive analysis delivered to your inbox daily.</p>
+                <h2>The Cyber Advisory Board Newsletter</h2>
+                <p>Get exclusive analysis delivered to your inbox weekly.</p>
             </div>
             <div class="promo-right">
-                <a class="light-blue-button" href="/subscribe/">subscribe now</a>
+                <a class="light-blue-button" href="https://www.tcbconference.com/cyber-advisory-board">subscribe now</a>
             </div>
         </div>
     </div>
