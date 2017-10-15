@@ -42,7 +42,7 @@ global $article_exerpt;
         echo '<div class="single-featured-image-header'.($post->post_type ? ' '.$post->post_type : '').'">';
            echo get_the_post_thumbnail($post);
             $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-            echo '<div class="image_social">';
+            echo '<div class="image_social" style="display: none;">';
                 echo'<div class="addthis_inline_share_toolbox addthis_default_style addthis_32x32_style">' .
                         '<a class="addthis_button_email"></a>' .
                         '<a class="addthis_button_linkedin"></a>' .
@@ -59,11 +59,11 @@ global $article_exerpt;
     <div class="block block-block newsletter-top-cta block-even clearfix">
         <div class="content clearfix">
             <div class="promo-left">
-                <h2>The Newsletter</h2>
-                <p>Get exclusive analysis delivered to your inbox daily.</p>
+                <h2>The Cyber Advisory Board Newsletter</h2>
+                <p>Get exclusive analysis delivered to your inbox weekly.</p>
             </div>
             <div class="promo-right">
-                <a class="light-blue-button" href="/subscribe/">subscribe now</a>
+                <a class="light-blue-button" href="https://www.tcbconference.com/cyber-advisory-board">subscribe now</a>
             </div>
         </div>
     </div>

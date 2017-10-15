@@ -40,9 +40,9 @@
 	<div class="header_baner">
 		<div class="col-mdws-1"><img class="sumome-icon" src="//sumo.com/client/images/apps/408190b5-e369-48af-8e31-afb7380ecd66/transparent-crown-dark.png"></div>
 		<div class="col-mdws-2 baner_content_center">
-				<p>SIGN UP FOR THE DAILY NEWSLETTER FOR MORE EXPERT ANALYSIS  & COMMENTARY</p>
+				<p>SIGN UP FOR THE WEEKLY NEWSLETTER FOR MORE EXPERT ANALYSIS  & COMMENTARY</p>
 				<span class="header_baner_btn">
-					<a href="/subscribe" class="sumome-smartbar-button">SIGN UP</a>
+					<a href="https://www.tcbconference.com/cyber-advisory-board" class="sumome-smartbar-button">SIGN UP</a>
 				</span>
 		</div>
 		<div class="col-mdws-3">
