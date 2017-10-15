@@ -63,7 +63,7 @@
         <div id="cyber-advisor-column-entry">
           <div class="cyber-img">
             <!-- apply custom image size made in functions.php setup -->
-            <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-avatar' ); ?> </a>
+            <a style="box-shadow: 2px grey;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-avatar' ); ?> </a>
           </div>
           <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
@@ -152,7 +152,7 @@
         </div>
 
         <div class="meet_board">
-          <h3 style="font-weight: bold; text-align: center;">Meet Our Board</h3>
+          <h3 style="font-weight: bold; text-align: center; line-height: 1.2;">Meet Our Board</h3>
           <?php
             $wpb_all_query = new WP_Query(array(
               'post_type'=>'post',
@@ -166,9 +166,12 @@
 
                 <!-- the loop -->
                 <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-                  <div>
-                    <span class="width: 50px; height: 50px; padding: 2% 2% 2% 1%;"><?php the_post_thumbnail( 'thecipherbrief-thumbnail-board' ); ?></a>
-                    <p><?php echo wp_trim_words( get_the_content(), 30, '...' );?> </p>
+                  <div style="padding: 2%;">
+                    <p style="font-size: 14px">
+                      <span style="float: left; width: 80px; height: auto; padding: 1.5% 2%;"> <?php the_post_thumbnail( ' ' ); ?> </span>
+                      <?php echo wp_trim_words( get_the_content(), 30, '...' );?> <br>
+                      <a href="https://www.thecipherbrief.com/cyber-advisory-board" style="text-align: center; color: red;">view the rest of the Cyber Advisory Board</a>
+                    </p>
                   </div>
                 <?php endwhile; ?>
                 <!-- end of the loop -->
@@ -178,7 +181,6 @@
             <?php else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
-                <a href="https://www.thecipherbrief.com/cyber-advisory-board">view the rest of the Cyber Advisory Board</a>
         </div>
 
       </div>

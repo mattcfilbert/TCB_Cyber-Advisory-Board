@@ -65,7 +65,7 @@ h3 {
   background-color: #000e31;
   padding: 15px;
   display: block;
-  width: fit-content;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -73,6 +73,7 @@ h3 {
   background-color: white;
   color: #000e31;
   text-align: left;
+  width: fit-content;
 }
 
 .col-title a:hover {
