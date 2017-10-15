@@ -365,6 +365,10 @@ box-sizing: border-box;
 
 }
 
+.category-threat-report .brief-contain p {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
