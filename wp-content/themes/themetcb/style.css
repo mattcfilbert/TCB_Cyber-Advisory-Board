@@ -256,6 +256,7 @@ h3 {
   color: red;
 }
 
+<<<<<<< HEAD
 #threat-report h3 a {
   text-transform: none;
 }
@@ -274,6 +275,14 @@ h3 {
 
 .threat-report-entry .author_name {
   font-size: 14px;
+=======
+
+div.search-block {
+    float: left;
+    padding: 9px 10px 9px 0px;
+    text-align: left;
+    display: none;
+>>>>>>> 36aee83b0a254082b750bf2fba17d9bfe656e1d3
 }
 
 .view_more {
@@ -284,6 +293,7 @@ h3 {
 .view_more:hover {
   color: #d81e3b;
   text-decoration: underline;
+
 }
 
 /*--------------------------------------------------------------
@@ -1953,11 +1963,6 @@ a:hover .nav-title,
     font-weight: 600;
 }
 
-div.search-block {
-    float: left;
-    padding: 9px 10px 9px 0px;
-    text-align: left;
-}
 
 div.search-block form input.search-field {
     color: #9d9fa2;
