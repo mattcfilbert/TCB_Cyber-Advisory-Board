@@ -137,6 +137,7 @@ h3 {
   height: 30%;
   width: 47%;
   flex-wrap: wrap;
+  overflow: hidden;
   color: white;
   text-overflow: ellipsis;
 }
@@ -185,6 +186,11 @@ h3 {
 
 #ciphertake {
   width: 80%;
+}
+
+#ciphertake .col-title a {
+  width: fit-content;
+  padding: 15px 30px;
 }
 
 .row {
