@@ -326,11 +326,11 @@ div.search-block {
   display: none;
 }
 
-body.archive.post-type-archive.post-type-archive-whitepapers.logged-in.admin-bar.wp-custom-logo.hfeed.has-sidebar.page-two-column.colors-light.customize-support .newsletter-top-cta {
+body.archive.post-type-archive .newsletter-top-cta {
   display: none;
 }
 
-body.archive.post-type-archive.post-type-archive-whitepapers.logged-in.admin-bar.wp-custom-logo.hfeed.has-sidebar.page-two-column.colors-light.customize-support .cyberhide {
+body.archive.post-type-archive .cyberhide {
   display: none;
 }
 
