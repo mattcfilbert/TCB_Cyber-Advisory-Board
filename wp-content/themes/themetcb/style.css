@@ -48,15 +48,19 @@ Styles for CAB site
 --------------------------------------------------------------*/
 h3 {
   font-family: 'Georgia'!important;
-  font-weight: bold;
+
+  font-weight: 700;
   font-size: 20px;
-  text-transform: uppercase;
+
 }
 
 .col-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+
+  margin-bottom: 0;
+
 }
 
 .col-title a {
@@ -69,9 +73,27 @@ h3 {
   text-decoration: none;
 }
 
+
+.third-section .col-title a {
+  background-color: white;
+  color: #000e31;
+  text-align: left;
+}
+
+
 .col-title a:hover {
   color: white!important;
 }
+
+
+.third-section .col-title a:hover {
+  color: #000e31!important;
+}
+
+.third-section {
+  width: 100%;
+}
+
 
 .site-container {
   display: flex;
@@ -84,9 +106,53 @@ h3 {
 .holder-container {
   display: flex!important;
   flex-direction: row!important;
-  justify-content: center!important;
+  /*justify-content: center!important;*/
   width: 100%;
   height: auto;
+
+}
+
+.vert-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#whitepaper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  height: 190px;
+  width: 50%;
+  color: white;
+  background-color: #000e31;
+  overflow: hidden;
+}
+
+.whitepaper-entry {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  flex-wrap: wrap;
+  color: white;
+  text-overflow: ellipsis;
+}
+
+.whitepaper-entry a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.whitepaper-entry h5 {
+  font-size: 14px;
+}
+
+.whitepaper-entry a:hover {
+  color: white;
+  text-decoration: none;
+
 }
 
 .timestamp {
@@ -121,6 +187,12 @@ h3 {
   text-align: left!important;
 }
 
+
+#our_latest_news h3 {
+  font-weight: 700;
+}
+
+
 #recent-news, #cab {
   border-right: 1px #C8C8C8 solid;
   padding-right: 2%;
@@ -131,19 +203,32 @@ h3 {
   margin: 5% 0;
 }
 
-#cyber-advisor-column-entry a, h3, h5 {
+
+#cyber-advisor-column-entry a {
+  font-weight: 700;
+}
+
+#cyber-advisor-column-entry a, #cyber-advisor-column-entry h3, #cyber-advisor-column-entry h5 {
   text-align: center!important;
 }
 
-.site-container .cyber-advisor-column-entry p {
+#cyber-advisor-column-entry p {
   font-family: 'replica-pro'!important;
+  line-height: 1.2;
+  margin-top: 10px;
+  letter-spacing: 1.1px;
 }
 
 .cyber-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
 }
+
 
 #whitepaper h1 a {
   color: #000e31;
@@ -164,7 +249,8 @@ h3 {
 
 }
 
-#our_latest_news .author_name {
+
+#our_latest_news .author_name, #threat-report .author_name {
   color: #077cc2;
   text-align: left;
 }
@@ -172,6 +258,7 @@ h3 {
 #cyber-advisor-column-entry .author_name {
   color: red;
 }
+
 
 
 div.search-block {
@@ -184,6 +271,25 @@ div.search-block {
 .inner.center {
     width: 72% !important;
     margin: 0 auto;
+
+#threat-report h3 a {
+  text-transform: none;
+}
+
+#threat-report {
+  max-height: 135vh;
+  border-bottom: 1px #C8C8C8 solid;
+}
+
+.threat-report-entry {
+  margin: 3% 0 4% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start!important;
+}
+
+.threat-report-entry .author_name {
+  font-size: 14px;
 }
 
 .view_more {
@@ -195,6 +301,9 @@ div.search-block {
   color: #d81e3b;
   text-decoration: underline;
 
+
+.search-block {
+  display: none;
 }
 
 /*--------------------------------------------------------------
