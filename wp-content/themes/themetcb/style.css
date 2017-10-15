@@ -256,7 +256,6 @@ h3 {
   color: red;
 }
 
-<<<<<<< HEAD
 #threat-report h3 a {
   text-transform: none;
 }
@@ -275,14 +274,13 @@ h3 {
 
 .threat-report-entry .author_name {
   font-size: 14px;
-=======
+}
 
 div.search-block {
     float: left;
     padding: 9px 10px 9px 0px;
     text-align: left;
     display: none;
->>>>>>> 36aee83b0a254082b750bf2fba17d9bfe656e1d3
 }
 
 .view_more {
