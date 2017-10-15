@@ -65,7 +65,7 @@ h3 {
   background-color: #000e31;
   padding: 15px;
   display: block;
-  width: 100%;
+  width: fit-content;
   text-decoration: none;
 }
 
