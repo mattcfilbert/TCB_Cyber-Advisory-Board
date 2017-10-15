@@ -2881,21 +2881,39 @@ function create_posttype() {
 						),
         )
     );
+
 		register_post_type( 'cyber advisor column',
-		// CPT Options
-				array(
-						'labels' => array(
-								'name' => __( 'Cyber Advisor Column' ),
-								'singular_name' => __( 'Cyber Advisor Column' )
-						),
-						'public' => true,
-						'has_archive' => true,
-						'rewrite' => array('slug' => 'cyberadvisorcolumn'),
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Cyber Advisor Column' ),
+                'singular_name' => __( 'Cyber Advisor Column' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'cyberadvisorcolumn'),
 						'supports' => array(
 							'title', 'editor', 'thumbnail', 'revisions'
 						),
-				)
+        )
+			);
+
+			register_post_type( 'column article',
+			// CPT Options
+					array(
+							'labels' => array(
+									'name' => __( 'Column Articles' ),
+									'singular_name' => __( 'Column Articles' )
+							),
+							'public' => true,
+							'has_archive' => true,
+							'rewrite' => array('slug' => 'columnarticle'),
+							'supports' => array(
+								'title', 'editor', 'thumbnail', 'revisions'
+							),
+					)
 			);
 }
+
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
