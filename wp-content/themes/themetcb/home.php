@@ -46,7 +46,7 @@
     <!-- cyber advisor columns -->
     <div class='col' id="cab">
 
-      <h1 class="col-title"><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
+      <h1 class="col-title"><a href="/cyberadvisorcolumn">CYBER ADVISOR COLUMNS</a></h1>
       <?php $wpb_all_query = new WP_Query(array(
         'post_type' =>'cyberadvisorcolumn',
         'post_status' =>'publish',
@@ -75,7 +75,7 @@
       <?php wp_reset_postdata(); ?>
 
   <?php else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <p><?php _e( 'Sorry, no posts of this type have been made yet.' ); ?></p>
   <?php endif; ?>
   <!-- <a href="/category/cyber-advisor-columns" class="view_more">VIEW MORE</a> -->
     </div>
@@ -155,7 +155,7 @@
 
   <div class="third-section">
     <!-- The White Papers -->
-    <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
+    <h1 class="col-title"><a href="/whitepaper">WHITE PAPERS</a></h1>
     <div class="vert-container">
       <div class="holder-container">
         <div id="whitepaper">
