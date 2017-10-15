@@ -128,7 +128,6 @@ h3 {
   width: 47%;
   flex-wrap: wrap;
   color: white;
-  border: 1px solid red;
   text-overflow: ellipsis;
 }
 
@@ -168,7 +167,7 @@ h3 {
 .col {
   display: flex!important;
   flex-direction: column!important;
-  width: 30%;
+  width: 32%;
   min-height: 135vh;
   margin-bottom: 5vh;
 }
@@ -276,7 +275,7 @@ h3 {
   font-size: 14px;
 }
 
-div.search-block {
+.search-block {
     float: left;
     padding: 9px 10px 9px 0px;
     text-align: left;
