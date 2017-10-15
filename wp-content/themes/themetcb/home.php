@@ -48,6 +48,7 @@
 
       <h1 class="col-title"><a href="/category/cyber-advisor-columns">CYBER ADVISOR COLUMNS</a></h1>
       <?php $wpb_all_query = new WP_Query(array(
+
         'post_type' =>'cyber advisor column',
         'post_status' =>'publish',
         'posts_per_page' => 4,
@@ -67,7 +68,9 @@
           </div>
           <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <h5 class="author_name">General Michael Hayden</h5>
+
           <!-- <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p> -->
+
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -82,6 +85,9 @@
 
 
     <!-- Threats -->
+
+ 
+
     <div class='col' id="threat-report">
       <h1 class="col-title"><a href="/category/threat-report">THREAT Report</a></h1>
       <?php
@@ -100,6 +106,7 @@
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+
         <div class="threat-report-entry">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <h5><a class="author_name" href="<?php the_permalink(); ?>"> Wesley Morgan </a></h5>
@@ -114,6 +121,7 @@
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
   <?php endif; ?>
   <!-- <a href="/category/threat-report" class="view_more">VIEW MORE</a> -->
+
     </div>
   </div>
 
@@ -157,6 +165,7 @@
     <!-- The White Papers -->
     <h1 class="col-title"><a href="/category/whitepaper">WHITE PAPERS</a></h1>
     <div class="vert-container">
+
       <div class="holder-container">
         <div id="whitepaper">
           <?php
