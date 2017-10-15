@@ -748,6 +748,8 @@ function thecipherbrief_setup() {
 
 	add_image_size( 'thecipherbrief-thumbnail-avatar', 100, 100, true );
 
+	add_image_size( 'thecipherbrief-thumbnail-board', 75, 75, true );
+
 	add_image_size( 'feature-thumb', 50, 33, true );
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
