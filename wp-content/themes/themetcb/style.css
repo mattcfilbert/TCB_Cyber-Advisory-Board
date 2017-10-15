@@ -326,6 +326,14 @@ div.search-block {
   display: none;
 }
 
+body.archive.post-type-archive.post-type-archive-whitepapers.logged-in.admin-bar.wp-custom-logo.hfeed.has-sidebar.page-two-column.colors-light.customize-support .newsletter-top-cta {
+  display: none;
+}
+
+body.archive.post-type-archive.post-type-archive-whitepapers.logged-in.admin-bar.wp-custom-logo.hfeed.has-sidebar.page-two-column.colors-light.customize-support .cyberhide {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
