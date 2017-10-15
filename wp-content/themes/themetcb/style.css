@@ -137,6 +137,7 @@ h3 {
   height: 30%;
   width: 47%;
   flex-wrap: wrap;
+  overflow: hidden;
   color: white;
   text-overflow: ellipsis;
 }
@@ -185,6 +186,11 @@ h3 {
 
 #ciphertake {
   width: 80%;
+}
+
+#ciphertake .col-title a {
+  width: fit-content;
+  padding: 15px 30px;
 }
 
 .row {
@@ -282,7 +288,7 @@ div.search-block {
 .inner.center {
     width: 72% !important;
     margin: 0 auto;
-
+}
 
 #threat-report h3 a {
   text-transform: none;
@@ -319,7 +325,7 @@ div.search-block {
 .view_more:hover {
   color: #d81e3b;
   text-decoration: underline;
-
+}
 
 
 .search-block {

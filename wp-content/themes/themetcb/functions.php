@@ -2884,7 +2884,7 @@ function create_posttype() {
         )
     );
 
-		register_post_type( 'cyber advisor column',
+		register_post_type( 'cyberadvisorcolumn',
     // CPT Options
         array(
             'labels' => array(
