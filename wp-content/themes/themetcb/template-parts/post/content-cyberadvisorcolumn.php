@@ -79,7 +79,7 @@
         </div><!-- .post-thumbnail -->
     <?php endif; ?>
 
-    <div class="entry-content columms">
+    <div class="entry-content columms cyberhide">
         <?php
         $img = '';
             echo '<div class="block block-views expert-article-headshot block-even clearfix">';

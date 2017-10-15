@@ -52,9 +52,13 @@ the_custom_above_banner();
                     </div>
                     <a href="<?php the_permalink(); ?>">
                       <div class="brief-contain">
-                        <?php the_post_thumbnail('thecipherbrief-featured-image'); ?>
-                        <?php the_title(); ?>
+                        <div class="cab-arc-img">
+                      <?php the_post_thumbnail('thecipherbrief-featured-image'); ?>
+                    </div>
+                      <div class="brief-content">
+                            <h2><?php the_title(); ?></h2>
                         <p><?php the_truncated_post(200) ?></p>
+                      </div>
                       </div>
                     </a>
                   <?php endwhile; ?>

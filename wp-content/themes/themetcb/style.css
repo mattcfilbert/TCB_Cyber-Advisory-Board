@@ -330,6 +330,7 @@ div.search-block {
   display: none;
 }
 
+
 #ciphertake-entry {
   width: 47%;
 }
@@ -344,6 +345,24 @@ div.search-block {
   margin: 10px 0 20px 0;
   padding: 0 30px 0 0;
   font-size: 12px;
+}
+
+body.archive.post-type-archive .newsletter-top-cta {
+  display: none;
+}
+
+body.archive.post-type-archive .cyberhide {
+  display: none;
+}
+
+.cab-arc-img {
+float: left;
+padding-right: 20px;
+width: 17%;
+max-height: 115px;
+overflow: hidden;
+box-sizing: border-box;
+
 }
 
 /*--------------------------------------------------------------
