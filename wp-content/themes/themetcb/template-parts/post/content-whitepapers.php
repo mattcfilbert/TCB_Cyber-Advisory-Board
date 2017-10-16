@@ -63,7 +63,7 @@ global $article_exerpt;
               <p>Get exclusive analysis from the Cyber Advisory Board.</p>
             </div>
             <div class="promo-right">
-                <a class="light-blue-button" href="https://www.tcbconference.com/cyber-advisory-board">subscribe now</a>
+              <a class="light-blue-button" href="https://www.tcbconference.com/cyber-advisory-board">subscribe now</a>
             </div>
         </div>
     </div>
@@ -204,6 +204,14 @@ global $article_exerpt;
         $tags_exist = wp_get_post_tags($post->ID);
     ?>
     <?php endif; ?>
+
+    <div style="width: 35vw; margin: 0 auto;">
+      <?php if( ! is_user_logged_in() ) : ?>
+        <?php echo do_shortcode("[login_form]"); ?>
+      <?php else : ?>
+        <div class="rcp_logged_in"><a href="<?php echo wp_logout_url( home_url() ); ?>"><?php _e( 'Log out', 'rcp' ); ?></a></div>
+      <?php endif; ?>
+    </div>
 
     <?php
     // @mpegi related articles
