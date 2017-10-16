@@ -89,8 +89,12 @@
 
                         the_post_thumbnail( 'thumbnail' );
                             // echo '<img src="https://pbs.twimg.com/profile_images/822547732376207360/5g0FC8XX_400x400.jpg" width="220" height="220" alt="">';
-                                echo '<div class="expert-name">';
-                                    echo $v -> name;
+                                echo '<div class="expert-name" style="text-align: center;">';
+                                    $str = get_the_content();
+                                    $split = explode(" ", $str);
+                                    echo $split[count($split)-2];
+                                    echo ' ';
+                                    echo $split[count($split)-1];
                                     echo '</br>';
                                     echo $temp[0] -> post_excerpt;
                                 echo '</div>';
