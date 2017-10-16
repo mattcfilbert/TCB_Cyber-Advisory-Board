@@ -148,8 +148,7 @@
             ?>
             <div class="footerAuthor">
                 <div class="view-content">
-                    <h3>The Author is <a
-                                href="/<?=$author[0]->taxonomy?>/<?=$author[0]->slug?>"><?=$author[0]->name?></a>
+                    <h3>The Author is <?=$author[0]->name?>
                     </h3>
                 </div>
                 <div class="views-field-description">
@@ -176,9 +175,7 @@
                     </div>
                 <?php }?>
                 <div class="views-field-nothing">
-                    <span class="field-content learn-more-about">
-                        <p>Learn more about The Cipher's Network <a href="/experts/" >here</a></p>
-                    </span>
+
                 </div>
             </div>
             <?php
