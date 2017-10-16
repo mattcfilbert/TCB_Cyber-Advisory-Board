@@ -162,7 +162,7 @@
       <?php wp_reset_postdata(); ?>
 
   <?php else : ?>
-      <p><?php _e( 'Sorry, no articles have been posted yet.' ); ?></p>
+      <p><?php _e( 'Cipher Take posts coming soon!' ); ?></p>
   <?php endif; ?>
     </div>
   </div>
