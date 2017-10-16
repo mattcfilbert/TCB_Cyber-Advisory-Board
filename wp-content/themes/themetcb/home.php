@@ -213,9 +213,17 @@
 
   <!-- extraneous blocks -->
   <div class="holder-container">
-    <div class="">
+    <div class="promo_blocks">
       <h3>How to Subscribe</h3>
-      <p>to subscribe click here <a href="https://www.thecipherbrief.com/subscribe">HERE</a></p>
+      <p>The Cipher Brief adds a layer of analysis to our reporting by identifying areas of agreement and disagreement by Cyber Advisory Board members and producing a White Paper that is available to subscribers. For more information about a Cyber Advisory Board subscription, click <a href="https://www.thecipherbrief.com/subscribe">here.</a></p>
+    </div>
+    <div class="promo_blocks">
+      <h3>Annual Corporate Sponsorship</h3>
+      <p>Companies with a dedicated commitment to thought leadership in the cyber realm are welcome to become Cyber Advisory Board sponsors. For more information on sponsorship, please contact <a href="https://www.thecipherbrief.com/subscribe">Brad Christian.</a></p>
+    </div>
+    <div class="promo_blocks">
+      <h3>Tell Us Your Thoughts</h3>
+      <p>Do you agree with the Board's findings? Disagree? Let us know your point of view and be a part of the conversation. We'll publish the most relevant subscriber contributions in the next issue. Subscribers can email us at <a href="mailto:cyberadvisoryboard@thecipherbrief.com">cyberadvisoryboard@thecipherbrief.com</a>.</p>
     </div>
   </div>
 </div>
