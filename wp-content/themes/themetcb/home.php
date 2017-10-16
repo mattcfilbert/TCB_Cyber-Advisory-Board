@@ -154,7 +154,7 @@
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div id="ciphertake-entry">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <p><?php echo wp_trim_words( get_the_content(), 85, '...' );?> </p>
+          <p class="cab-hide"><?php echo wp_trim_words( get_the_content(), 85, '...' );?> </p>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
