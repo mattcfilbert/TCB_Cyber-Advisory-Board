@@ -66,8 +66,15 @@
             <a style="border: 2px solid black;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-avatar' ); ?> </a>
           </div>
           <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
-          <h5 class="author_name">General Michael Hayden</h5>
-          <!-- <p><?php echo wp_trim_words( get_the_content(), 24, '...' );?> </p> -->
+          <h5 class="author_name">
+            <?php
+              $str = get_the_content();
+              $split = explode(" ", $str);
+              echo $split[count($split)-2];
+              echo ' ';
+              echo $split[count($split)-1];
+            ?>
+          </h5>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
