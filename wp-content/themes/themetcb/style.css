@@ -47,7 +47,7 @@ Text Domain: thecipherbrief
 Styles for CAB site
 --------------------------------------------------------------*/
 h3 {
-  font-family: 'Georgia'!important;
+  font-family: 'replica-pro'!important;
   font-weight: 700;
   font-size: 20px;
 
@@ -56,16 +56,18 @@ h3 {
 .board_img {
   float: left;
   width: 30%;
-  padding-right: 3px;
+  padding: 0 12px 4px 0;
 }
 
 .board_text {
   font-size: 10.5px;
   margin: 0;
+  font-family: 'replica-pro';
 }
 
 .board_link {
   font-size: 11px;
+  font-family: 'replica-pro';
 }
 
 
@@ -74,7 +76,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 0;
-
+  font-size: 20px;
 }
 
 .col-title a {
@@ -89,8 +91,8 @@ h3 {
 
 
 .third-section .col-title a {
-  background-color: white;
-  color: #000e31;
+  /*background-color: white;*/
+  /*color: #000e31;*/
   text-align: left;
   width: fit-content;
 }
@@ -101,14 +103,13 @@ h3 {
 }
 
 
-.third-section .col-title a:hover {
+/*.third-section .col-title a:hover {
   color: #000e31!important;
-}
+}*/
 
 .third-section {
   width: 100%;
 }
-
 
 .site-container {
   display: flex;
@@ -138,9 +139,9 @@ h3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 0px 10px 0 5px;
-  height: auto;
+  justify-content: space-between;
+  padding: 0px 5px 0 10px;
+  height: 240px;
   width: 60%;
   color: white;
   background-color: #000e31;
@@ -167,6 +168,7 @@ h3 {
 
 .whitepaper-entry h5 {
   font-size: 14px;
+  font-family: 'replica-pro';
 }
 
 .whitepaper-entry a:hover {
@@ -178,7 +180,8 @@ h3 {
   width: 25%;
   height: 240px;
   margin: 0 1%;
-  overflow: hidden;
+  padding: 5px;
+  overflow: scroll;
   text-overflow: ellipsis;
   border: 1px solid black;
 }
@@ -222,6 +225,11 @@ h3 {
   margin: 15px 0 0 0;
 }
 
+#our_latest_news h3 a, #cyber-advisor-column-entry h3 a, .threat-report-entry h3 a {
+  line-height: 1.2;
+  font-size: 16px;
+}
+
 #our_latest_news h3, #our_latest_news .author_name {
   text-align: left!important;
 }
@@ -262,27 +270,27 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 200px;
+  max-width: 100px;
   height: auto;
-  max-height: 175px;
+  max-height: 100px;
   overflow: hidden;
   margin: 0 auto;
 }
-
+/*
 #whitepaper h1 a {
   color: #000e31;
   transition: none;
   background-color: white;
   text-align: left;
-}
+}*/
 
-#whitepaper h1 a:hover {
+/*#whitepaper h1 a:hover {
   background-color: none;
-}
+}*/
 
 .author_name {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: 'replica-pro';
 }
@@ -295,7 +303,6 @@ h3 {
 #cyber-advisor-column-entry .author_name {
   color: red;
 }
-
 
 div.search-block {
     float: left;
@@ -311,6 +318,8 @@ div.search-block {
 
 #threat-report h3 a {
   text-transform: none;
+  display: block;
+  margin: 0 0 -5px 0;
 }
 
 #threat-report {
@@ -319,7 +328,7 @@ div.search-block {
 }
 
 .threat-report-entry {
-  margin: 20px 0 20px 0;
+  margin: 5px 0 5px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start!important;
@@ -388,9 +397,9 @@ box-sizing: border-box;
 .promo_blocks {
   background-color: #eee;
   width: 24vw;
-  height: 24vh;
+  height: 23vh;
   margin: auto 7px;
-  padding: 1%;
+  padding: 1.5% 1% 0 1%;
   overflow: scroll;
 }
 
@@ -4332,7 +4341,7 @@ object {
 
 #block-views-cipher_take-block h3 {
     color: #000f33;
-    font-family: "Georgia", serif;
+    font-family: "replica-pro", serif;
 }
 
 #block-views-cipher_take-block p {
@@ -12634,7 +12643,7 @@ ul.primary li a {
 }
 
 h1 {
-    margin: 0 0 5px -2px;
+    /*margin: 0 0 5px -2px;*/
     padding: 0;
     font-size: 95%;
     line-height: 1em;
