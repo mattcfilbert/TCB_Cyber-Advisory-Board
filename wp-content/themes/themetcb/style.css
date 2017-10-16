@@ -6157,11 +6157,16 @@ input[type="search"] {
   .board_link {
     font-size: 90%;
   }
-  .whitepaper-entry {
-    width: 100%
+  #whitepaper {
+    flex-wrap: nowrap;
+    height: 100%;
   }
   .cab-arc-img {
     width: 37%;
+  }
+  .meet_board {
+    width: 35%;
+    height: auto;
   }
 }
 
