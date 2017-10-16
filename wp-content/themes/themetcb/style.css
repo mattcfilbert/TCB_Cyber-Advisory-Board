@@ -61,6 +61,7 @@ h3 {
 
 .board_text {
   font-size: 10.5px;
+  margin: 0;
 }
 
 .board_link {
@@ -6178,22 +6179,34 @@ input[type="search"] {
     padding-right: 0;
   }
   .board_text {
-    overflow: hidden;
-    height: 10px;
+    overflow: scroll;
+    max-height: 140px;
     text-align: center;
   }
   .board_link {
     font-size: 90%;
   }
-  .whitepaper-entry {
-    width: 100%
+  #whitepaper {
+    flex-wrap: nowrap;
+    height: 100%;
   }
   .cab-arc-img {
     width: 37%;
   }
+
   #ciphertake .ciphertake-entry:first-of-type {
     padding: 0;
     border-right: none;
+  }
+  .meet_board {
+    width: 35%;
+    height: auto;
+  }
+  .cab-hide {
+    display: none;
+  }
+  .promo_blocks h3 {
+    font-size: 12px;
   }
 }
 
