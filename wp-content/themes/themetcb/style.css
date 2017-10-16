@@ -63,6 +63,10 @@ h3 {
   font-size: 10.5px;
 }
 
+.board_link {
+  font-size: 11px;
+}
+
 
 .col-title {
   text-align: center;
@@ -378,6 +382,31 @@ box-sizing: border-box;
 
 .category-threat-report .brief-contain p {
   display: none;
+}
+
+.promo_blocks {
+  background-color: #eee;
+  width: 24vw;
+  height: 25vh;
+  border: 1px solid red;
+  margin: auto 7px;
+  padding: 1%;
+}
+
+.promo_blocks h3 {
+  font-family: replica-pro;
+  font-weight: bold;
+  font-size: 15px;
+  margin: auto 0 15px 0;
+}
+
+.promo_blocks p {
+  font-family: replica-pro;
+  font-size: 12px;
+}
+
+.promo_blocks a {
+  color: #d52340;
 }
 
 /*--------------------------------------------------------------
