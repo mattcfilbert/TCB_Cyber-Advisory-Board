@@ -190,10 +190,10 @@
         <div class="meet_board">
           <h3 style="font-weight: bold; text-align: center; line-height: 1.2;">Meet Our Board</h3>
           <div class="meet_content" style='padding: 4px 4px 0 4px;'>
-            <img style="float: left; width: 30%; padding-right: 3px;" src="https://thecipherbriefcyber.com/wp-content/uploads/2017/10/Robert-Work-bw.jpg" alt="Robert Work">
-            <p style="font-size: 10.5px;">Mr. Robert Work was the 31st Deputy Secretary of Defense, serving under three different Secretaries across two administrations. Previously, he served as chief executive officer of the Center for a New American Security. From 2009 to 2013, he served as the Under Secretary of the Navy. Mr. Work served on active duty in the U.S. Marine Corps for 27 years, retiring as a Colonel in 2001. He joined the Center for Strategic and Budgetary Assessments in 2002, where he wrote and spoke extensively on defense strategy and programs, revolutions in war, Department of Defense transformation, and maritime affairs. He also was an adjunct professor at The George Washington University.</p>
+            <img class="board_img" src="https://thecipherbriefcyber.com/wp-content/uploads/2017/10/Robert-Work-bw.jpg" alt="Robert Work">
+            <p class="board_text">Mr. Robert Work was the 31st Deputy Secretary of Defense, serving under three different Secretaries across two administrations. Previously, he served as chief executive officer of the Center for a New American Security. From 2009 to 2013, he served as the Under Secretary of the Navy. Mr. Work served on active duty in the U.S. Marine Corps for 27 years, retiring as a Colonel in 2001. He joined the Center for Strategic and Budgetary Assessments in 2002, where he wrote and spoke extensively on defense strategy and programs, revolutions in war, Department of Defense transformation, and maritime affairs. He also was an adjunct professor at The George Washington University.</p>
           </div>
-              <a href="https://www.thecipherbrief.com/cyber-advisory-board" style=" display: block; text-align: center; color: #d52340;">view the rest of the Cyber Advisory Board</a>
+              <a class='board_link' href="https://www.thecipherbrief.com/cyber-advisory-board" style=" display: block; text-align: center; color: #d52340;">view the rest of the Cyber Advisory Board</a>
 
         </div>
 
