@@ -138,9 +138,9 @@ h3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
-  height: 240px;
+  justify-content: center;
+  padding: 0px 10px 0 5px;
+  height: auto;
   width: 60%;
   color: white;
   background-color: #000e31;
@@ -150,7 +150,8 @@ h3 {
 .whitepaper-entry {
   display: flex;
   flex-direction: column;
-  height: 30%;
+  justify-content: center;
+  height: 28%;
   width: 47%;
   flex-wrap: wrap;
   overflow: hidden;
