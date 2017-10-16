@@ -109,7 +109,15 @@
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div class="threat-report-entry">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <h5><a class="author_name" href="<?php the_permalink(); ?>"> Wesley Morgan </a></h5>
+          <h5><a class="author_name" href="<?php the_permalink(); ?>">
+            <?php
+              $str = get_the_content();
+              $split = explode(" ", $str);
+              echo $split[count($split)-2];
+              echo ' ';
+              echo $split[count($split)-1];
+            ?>
+          </a></h5>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
