@@ -387,8 +387,7 @@ box-sizing: border-box;
 .promo_blocks {
   background-color: #eee;
   width: 24vw;
-  height: 25vh;
-  border: 1px solid red;
+  height: 24vh;
   margin: auto 7px;
   padding: 1%;
 }
