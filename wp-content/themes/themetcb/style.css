@@ -6196,6 +6196,9 @@ input[type="search"] {
   .cab-hide {
     display: none;
   }
+  .promo_blocks h3 {
+    font-size: 12px;
+  }
 }
 
 
