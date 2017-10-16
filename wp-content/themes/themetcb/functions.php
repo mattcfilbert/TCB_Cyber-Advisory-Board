@@ -2911,7 +2911,7 @@ function create_posttype() {
 							'has_archive' => true,
 							'rewrite' => array('slug' => 'columnarticle'),
 							'supports' => array(
-								'title', 'editor', 'thumbnail', 'revisions'
+								'title', 'editor', 'thumbnail', 'revisions', 'author'
 							),
 					)
 			);
