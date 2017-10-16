@@ -93,7 +93,7 @@
     'post_type'=>'post',
     'category_name' => 'threat report',
     'post_status'=>'publish',
-    'posts_per_page'=> 10
+    'posts_per_page'=> 8
   ));
     ?>
 
