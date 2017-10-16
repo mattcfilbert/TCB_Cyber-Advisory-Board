@@ -2913,7 +2913,23 @@ function create_posttype() {
 							'has_archive' => true,
 							'rewrite' => array('slug' => 'columnarticle'),
 							'supports' => array(
-								'title', 'editor', 'thumbnail', 'revisions', 'author'
+								'title', 'editor', 'thumbnail', 'revisions'
+							),
+					)
+			);
+
+			register_post_type( 'promoblock',
+			// CPT Options
+					array(
+							'labels' => array(
+									'name' => __( 'Promotional Block' ),
+									'singular_name' => __( 'Promotional Block' )
+							),
+							'public' => true,
+							'has_archive' => true,
+							'rewrite' => array('slug' => 'promo'),
+							'supports' => array(
+								'title', 'editor', 'revisions'
 							),
 					)
 			);
