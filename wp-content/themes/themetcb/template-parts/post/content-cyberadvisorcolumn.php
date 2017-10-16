@@ -65,8 +65,8 @@
     <div class="block block-block newsletter-top-cta block-even clearfix">
         <div class="content clearfix">
             <div class="promo-left">
-                <h2>The Cyber Advisory Board Newsletter</h2>
-                <p>Get exclusive analysis delivered to your inbox weekly.</p>
+                <h2>Cyber Advisory Board Subscription</h2>
+                <p>Get exclusive analysis from the Cyber Advisory Board.</p>
             </div>
             <div class="promo-right">
                 <a class="light-blue-button" href="https://www.tcbconference.com/cyber-advisory-board">subscribe now</a>
