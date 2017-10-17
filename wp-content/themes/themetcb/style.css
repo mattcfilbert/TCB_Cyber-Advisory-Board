@@ -2370,7 +2370,7 @@ li.menu-item a svg {
 }
 
 #block-menu-menu-social-media-menu ul li a {
-    color: #FFFFFF;
+    color: #23252d;
     font-size: 2.2em;
     -webkit-transition: color 100ms linear;
     -moz-transition: color 100ms linear;
@@ -20212,9 +20212,9 @@ p.dec_cyber{
 
 #block-menu-menu-social-media-menu ul {
     margin: 0 0 0 0;
-    background: #23252d;
-    border: 1px #23252d solid;
-    border-radius: 5px;
+    background: transparent;
+
+  
     padding: 1px 0 1px 0;
     max-width: 400px;
 }
