@@ -30,7 +30,12 @@
         <div id="our_latest_news">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <h5><a class="author_name" href="<?php the_permalink(); ?>"> <?php the_author(); ?> </a></h5>
+          <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
+          <?php if ( $author[0] ) : ?>
+          <h5><a class="author_name" href="<?php the_permalink(); ?>"> <?php echo $author[0]->name;?> </a></h5>
+          <?php else : ?>
+            <h5><a class="author_name" href="<?php the_permalink(); ?>"> The Cipher Brief Staff </a></h5>
+          <?php endif; ?>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
@@ -65,7 +70,7 @@
             <!-- apply custom image size made in functions.php setup -->
             <a style="border: 2px solid black;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-cab' ); ?> </a>
           </div>
-          <?php $postID = get_the_ID() ?>
+
           <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
           <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
           <h5 class="author_name">
