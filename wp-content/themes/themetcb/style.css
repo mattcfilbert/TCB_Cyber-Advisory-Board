@@ -110,6 +110,8 @@ h3 {
 
 .third-section {
   width: 100%;
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 .site-container {
@@ -141,9 +143,10 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 5px 0 10px;
-  height: 240px;
-  width: 60%;
+  padding: 10px 5px 15px 10px;
+  min-height: 240px;
+  width: 50vw;
+  height: auto;
   color: white;
   background-color: #000e31;
   overflow: hidden;
@@ -153,8 +156,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 28%;
-  width: 47%;
+  height: auto;
+  width: 45%;
+  padding: 5px 5px 7px 2px;
   flex-wrap: wrap;
   overflow: hidden;
   color: white;
@@ -178,9 +182,12 @@ h3 {
 }
 
 .meet_board {
-  width: 25%;
-  height: 240px;
-  margin: 0 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 27%;
+  height: auto;
+  margin: 0 0 0 1%;
   padding: 5px;
   overflow: scroll;
   text-overflow: ellipsis;
@@ -205,6 +212,7 @@ h3 {
 }
 
 #ciphertake {
+  margin: 0 0 8vh 0;
   width: 100%;
 }
 
@@ -271,9 +279,9 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 100px;
+  max-width: 130px;
   height: auto;
-  max-height: 100px;
+  max-height: 130px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -324,12 +332,14 @@ div.search-block {
 }
 
 #threat-report {
-  max-height: 135vh;
+  min-height: 90vh;
+  height: fit-content;
   border-bottom: 1px #C8C8C8 solid;
+  padding-bottom: 1%;
 }
 
 .threat-report-entry {
-  margin: 5px 0 5px 0;
+  margin: 5px 0 8px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start!important;
@@ -364,13 +374,14 @@ div.search-block {
 .ciphertake-entry h3 a {
   margin: 5px 0 15px 0;
   color: #077cc2;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .ciphertake-entry p {
   margin: 10px 0 20px 0;
   padding: 0 30px 0 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body.archive.post-type-archive .newsletter-top-cta {
@@ -397,11 +408,15 @@ box-sizing: border-box;
 
 .promo_blocks {
   background-color: #eee;
-  width: 24vw;
-  height: 23vh;
-  margin: auto 7px;
+  width: 23vw;
+  height: 175px;
+  margin: auto 10px auto 0;
   padding: 1.5% 1% 0 1%;
   overflow: scroll;
+}
+
+.promo_blocks:last-of-type {
+  margin: auto 0 auto 0;
 }
 
 .promo_blocks h3 {
@@ -420,6 +435,55 @@ box-sizing: border-box;
   color: #d52340;
 }
 
+.col-ad {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar_ad {
+  /* dummy text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 26px;
+  background-color: #eee;
+  border: 1px solid red;
+  /* end dummy text */
+  margin-top: 5vh;
+  height: 400px;
+  width: 250px;
+  overflow: visible;
+}
+
+.sidebar_ad2 {
+  /* dummy text */
+  border: 1px solid red;
+  align-items: center;
+  background-color: #eee;
+  color: red;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* end dummy text */
+  height: 450px;
+  width: 250px;
+  overflow: visible;
+}
+
+.third-section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.promo-holder {
+  width: fit-content;
+}
 /*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
@@ -852,7 +916,7 @@ h3 {
     margin: 0 0 .5em 0;
     padding: .25em 0 0 0;
     color: #000f33;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     line-height: 1em;
     font-family: 'replica-pro', Arial, Helvetica, sans-serif;
     font-weight: 400;
