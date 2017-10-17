@@ -19,7 +19,7 @@
                 <?php echo date("l F d, Y", time())?>
             </div>
             <div class="topNewsletter">
-                <a href="https://www.tcbconference.com/cyber-advisory-board">Get Our NEWSLETTER</a>
+                <a href="https://www.tcbconference.com/cyber-advisory-board">Become a Subscriber</a>
             </div>
 	    </div><!-- #top -->
 	</div><!-- .wrap -->

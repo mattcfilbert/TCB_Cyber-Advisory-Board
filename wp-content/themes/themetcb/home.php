@@ -105,6 +105,8 @@
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div class="threat-report-entry">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <?php $postID = get_the_ID() ?>
+          <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
           <h5><a class="author_name" href="<?php the_permalink(); ?>">
               <?=$author[0]->name?>
           </a></h5>
