@@ -149,6 +149,23 @@ h3 {
   overflow: hidden;
 }
 
+.post-type-archive-whitepapers .rcp_logged_in {
+    display: none;
+}
+
+.post-type-archive-whitepapers .post_article p {
+    line-height: 1.5em;
+    display: none;
+}
+
+.post-type-archive-whitepapers .post_article .rcp_form p {
+    display: block;
+}
+
+.post-type-archive-whitepapers.logged-in p {
+    display: block;
+}
+
 .whitepaper-entry {
   display: flex;
   flex-direction: column;

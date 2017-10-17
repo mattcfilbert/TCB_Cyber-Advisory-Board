@@ -42,6 +42,7 @@ the_custom_above_banner();
                     <div class="views-row dead-drop-line">
                         <a href="/whitepaper/<?php echo $post->post_name;?>/"><h2><?php echo $post->post_title ?></h2></a>
                     </div>
+                    <p><?php the_content(); ?></p>
                     <?php
                 }
                 if (function_exists(custom_pagination)) {
