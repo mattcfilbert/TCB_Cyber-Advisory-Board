@@ -5033,11 +5033,11 @@ object {
     }
 }
 
-@media only screen and (max-width: 1277px) {
+/*@media only screen and (max-width: 1277px) {
     #block-menu-menu-social-media-menu {
       display: none;
     }
-}
+}*/
 
 @media only screen and (max-width: 1150px) {
     #top-menu>li.menu-item>a {
@@ -5110,7 +5110,7 @@ object {
     .menu-top-menu-container ul li a:hover .sub-menu {
         display: none;
     }
-    /*podmenu dobby tut display: none; => display: block;*/
+    /*podmenu dobby1 tut display: none; => display: block;*/
     #top-menu>li:hover>ul.sub-menu {
         display: none;
         position: absolute;
@@ -5137,12 +5137,12 @@ object {
     .header_baner_btn {
         margin-top: 20px;
     }
-    #top {
+    /*#top {
         width: 60%!important;
     }
     #block-views-advertisement_sidebar-block_1 {
         width: 60%!important;
-    }
+    }*/
     .col-mdws-1 {
         display: none;
         padding-right: 0px!important;
@@ -5454,7 +5454,7 @@ a.sumome-smartbar-link {
     #footer-menu {
         margin: 0 0 20px 0;
     }
-    #block-menu-menu-social-media-menu {
+    /*#block-menu-menu-social-media-menu {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -5484,7 +5484,7 @@ a.sumome-smartbar-link {
     }
     #block-menu-menu-social-media-menu ul li:nth-child(4) {
         background-color: rgb(220, 78, 65);
-    }
+    }*/
 }
 
 @media screen and (max-width: 600px) {
@@ -20126,4 +20126,46 @@ p.dec_cyber{
 
 .inherit-header {
   color: inherit;
+}
+
+/*Matt's additional CSS for CAB*/
+
+#block-menu-menu-social-media-menu ul {
+    margin: 0 0 0 0;
+    background: #23252d;
+    border: 1px #23252d solid;
+    border-radius: 5px;
+    padding: 1px 0 1px 0;
+    max-width: 400px;
+}
+
+#block-menu-menu-social-media-menu {
+    padding: 7px 0;
+    text-align: center;
+}
+#block-menu-menu-social-media-menu ul li {
+    margin: 0 7px 0 7px;
+    padding: 0;
+    display: inline-block;
+  }
+  #block-menu-menu-social-media-menu ul li a {
+    font-size: 2em;
+}
+.main-navigation {
+    float: none;
+}
+
+.navigation-top .wrap {
+    text-align: center;
+  }
+
+#top-menu>li.menu-item>a {
+  font-size: 1.6em;
+}
+
+.main-navigation li {
+    position: relative;
+    display: inline-block;
+    margin: 4px 0 0 0;
+    padding: 0 3px;
 }
