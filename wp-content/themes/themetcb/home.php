@@ -91,18 +91,16 @@
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
-    'post_type'=>'post',
-    'category_name' => 'threat report',
-    'post_status'=>'publish',
-    'posts_per_page'=> 8,
+    'post_type' =>'post',
+    'category_name' => 'threat report'
+    'post_status' =>'publish',
+    'posts_per_page' => 8,
     'orderby' => 'date',
     'order' => 'DESC'
-  ));
-    ?>
+    ));
+  ?>
 
   <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
