@@ -92,7 +92,7 @@
   // the query
   $wpb_all_query = new WP_Query(array(
     'post_type' =>'post',
-    'category_name' => 'threat report'
+    'category_name' => 'threatreport',
     'post_status' =>'publish',
     'posts_per_page' => 8,
     'orderby' => 'date',
