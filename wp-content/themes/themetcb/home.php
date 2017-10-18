@@ -18,9 +18,10 @@
     'post_type' =>'post',
     'category_name' => 'our latest reporting',
     'post_status' =>'publish',
-    'posts_per_page' => 4,
+    'showposts' => 4,
     'orderby' => 'date',
-    'order' => 'DESC'
+    'order' => 'DESC',
+
     ));
   ?>
 
@@ -55,7 +56,7 @@
       <?php $wpb_all_query = new WP_Query(array(
         'post_type' =>'cyberadvisorcolumn',
         'post_status' =>'publish',
-        'posts_per_page' => 5,
+        'showposts' => 5,
         'orderby' => 'date',
         'order' => 'DESC'
       ));
@@ -68,10 +69,17 @@
         <div id="cyber-advisor-column-entry">
           <div class="cyber-img">
             <!-- apply custom image size made in functions.php setup -->
-            <a style="border: 2px solid black;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-cab' ); ?> </a>
+            <?php $alt_link = wp_get_post_terms($post->ID, 'alt_links'); ?>
+            <?php if ( $alt_link[0] ) : ?>
+            <a style="border: 2px solid black;" href="<?php echo $alt_link[0]->name;?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-cab' ); ?> </a>
           </div>
 
+          <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php echo $alt_link[0]->name;?>"> <?php the_title(); ?> </a> </h3>
+          <?php else : ?>
+            <a style="border: 2px solid black;" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'thecipherbrief-thumbnail-cab' ); ?> </a>
+          </div>
           <h3 style="text-transform: capitalize; line-height: 1.2;"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h3>
+          <?php endif; ?>
           <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
           <h5 class="author_name">
             <?=$author[0]->name?>
@@ -99,7 +107,7 @@
     'post_type'=>'post',
     'category_name' => 'threat report',
     'post_status'=>'publish',
-    'posts_per_page'=> 8
+    'showposts'=> 8
   ));
     ?>
 
