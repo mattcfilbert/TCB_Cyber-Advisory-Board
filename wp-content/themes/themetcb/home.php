@@ -94,7 +94,9 @@
     'post_type'=>'post',
     'category_name' => 'threat report',
     'post_status'=>'publish',
-    'posts_per_page'=> 8
+    'posts_per_page'=> 8,
+    'orderby' => 'date',
+    'order' => 'DESC'
   ));
     ?>
 
@@ -172,16 +174,21 @@
     <div class="vert-container">
       <div class="holder-container">
         <div id="whitepaper">
-          <?php
-          $wpb_all_query = new WP_Query(array(
-            'post_type'=> 'whitepapers',
-            'post_status'=> 'publish',
-            'posts_per_page'=> 3,
-            'orderby' => 'date',
-            'order' => 'DESC'
-          ));
+          <div class="holder-container inside-whitepaper">
+          <div class="explanation">
+            <h5>What Are WhitePapers?</h5>
+            <!-- <p>Typewriter austin microdosing occupy af, church-key DIY. Single-origin coffee mustache shabby chic gastropub bushwick microdosing meggings kogi keytar sriracha semiotics pinterest iPhone. Man bun ramps cray, bitters kale chips butcher vegan bicycle rights poutine tote bag.</p> -->
+          </div>
+          <div class="vert-container">
+            <?php
+            $wpb_all_query = new WP_Query(array(
+              'post_type'=> 'whitepapers',
+              'post_status'=> 'publish',
+              'posts_per_page'=> 3,
+              'orderby' => 'date',
+              'order' => 'DESC'
+            ));
             ?>
-
           <?php if ( $wpb_all_query->have_posts() ) : ?>
 
               <!-- the loop -->
@@ -199,6 +206,8 @@
           <?php else : ?>
               <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
           <?php endif; ?>
+        </div>
+        </div>
         </div>
 
         <!-- Meet Our Board -->
