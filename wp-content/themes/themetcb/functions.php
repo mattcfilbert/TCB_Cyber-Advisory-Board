@@ -1620,7 +1620,7 @@ class Test_Terms {
             'query_var'                         => true,
             'rewrite'                           => array('slug' =>'author')
         );
-        register_taxonomy( 'authors', array( 'post', 'whitepapers', 'cyberadvisorcolumn' ), $args );
+        register_taxonomy( 'authors', array( 'post', 'whitepapers', 'cyberadvisorcolumn', 'threatreport' ), $args );
     }
 
     function register_new_terms() {
@@ -3037,16 +3037,16 @@ function create_posttype() {
         )
 			);
 
-			register_post_type( 'columnarticle',
+			register_post_type( 'threatreport',
 			// CPT Options
 					array(
 							'labels' => array(
-									'name' => __( 'Column Articles' ),
-									'singular_name' => __( 'Column Articles' )
+									'name' => __( 'Threat Report' ),
+									'singular_name' => __( 'Threat Report' )
 							),
 							'public' => true,
 							'has_archive' => true,
-							'rewrite' => array('slug' => 'columnarticle'),
+							'rewrite' => array('slug' => 'threat-report'),
 							'supports' => array(
 								'title', 'editor', 'thumbnail', 'revisions'
 							),
