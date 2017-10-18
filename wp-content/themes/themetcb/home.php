@@ -29,14 +29,27 @@
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
         <div id="our_latest_news">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
-          <?php if ( $author[0] ) : ?>
-          <h5><a class="author_name" href="<?php the_permalink(); ?>"> <?php echo $author[0]->name;?> </a></h5>
+          <?php $alt_link = wp_get_post_terms($post->ID, 'alt_links'); ?>
+          <?php if ( $alt_link[0] ) : ?>
+            <a href="<?php echo $alt_link[0]->name; ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
+            <h3><a href="<?php echo $alt_link[0]->name; ?>"><?php the_title(); ?></a></h3>
+            <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
+            <?php if ( $author[0] ) : ?>
+            <h5><a class="author_name" href="<?php echo $alt_link[0]->name; ?>"> <?php echo $author[0]->name;?> </a></h5>
+            <?php else : ?>
+              <h5><a class="author_name" href="<?php echo $alt_link[0]->name; ?>"> The Cipher Brief Staff </a></h5>
+            <?php endif; ?>
           <?php else : ?>
-            <h5><a class="author_name" href="<?php the_permalink(); ?>"> The Cipher Brief Staff </a></h5>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thecipherbrief-featured-image' ); ?></a>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <?php $author = wp_get_post_terms($post->ID, 'authors'); ?>
+            <?php if ( $author[0] ) : ?>
+            <h5><a class="author_name" href="<?php the_permalink(); ?>"> <?php echo $author[0]->name;?> </a></h5>
+            <?php else : ?>
+              <h5><a class="author_name" href="<?php the_permalink(); ?>"> The Cipher Brief Staff </a></h5>
+            <?php endif; ?>
           <?php endif; ?>
+
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
