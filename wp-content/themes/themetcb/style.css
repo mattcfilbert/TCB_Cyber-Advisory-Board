@@ -49,7 +49,7 @@ Styles for CAB site
 h3 {
   font-family: 'replica-pro'!important;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px!important;
 }
 
 .board_img {
@@ -59,7 +59,7 @@ h3 {
 }
 
 .board_text {
-  font-size: 10.5px;
+  font-size: 13px;
   margin: 0;
   font-family: 'replica-pro';
 
@@ -287,7 +287,7 @@ h3 {
 
 #our_latest_news h3 a, #cyber-advisor-column-entry h3 a, .threat-report-entry h3 a {
   line-height: 1.2;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #our_latest_news h3, #our_latest_news .author_name {
@@ -390,7 +390,7 @@ div.search-block {
 }
 
 .threat-report-entry {
-  margin: 5px 0 8px 0;
+  margin: 8% 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start!important;
@@ -425,14 +425,15 @@ div.search-block {
 .ciphertake-entry h3 a {
   margin: 5px 0 15px 0;
   color: #077cc2;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .ciphertake-entry p {
   margin: 10px 0 20px 0;
+  font-family: 'replica-pro';
   padding: 0 30px 0 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body.archive.post-type-archive .newsletter-top-cta {
@@ -479,7 +480,7 @@ box-sizing: border-box;
 
 .promo_blocks p {
   font-family: replica-pro;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .promo_blocks a {
