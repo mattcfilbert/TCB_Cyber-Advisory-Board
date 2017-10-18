@@ -163,10 +163,10 @@
       <div class="row">
         <?php
           $wpb_all_query = new WP_Query(array(
-            'post_type'=>'post',
+            'post_type' => 'post',
             'category_name' => 'ciphertake',
-            'post_status'=>'publish',
-            'posts_per_page'=> 1
+            'post_status' => 'publish',
+            'posts_per_page' => 1
           ));
             ?>
 
@@ -177,6 +177,7 @@
                 <div class="ciphertake-entry">
                   <h3><a href="<?php the_permalink(); ?>">Headline: <?php the_title(); ?></a></h3>
                     <?php function get_paragraph($string, $paraNum) {
+                      $string = strip_tags($string, '<a><b><i>');
                       $newVar = wpautop($string);
                       $entry = explode('<p>', $newVar);
                       return $entry[$paraNum];
