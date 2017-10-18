@@ -211,7 +211,7 @@
           <div class="holder-container inside-whitepaper">
           <div class="explanation">
             <h5>What Are WhitePapers?</h5>
-            <!-- <p>Typewriter austin microdosing occupy af, church-key DIY. Single-origin coffee mustache shabby chic gastropub bushwick microdosing meggings kogi keytar sriracha semiotics pinterest iPhone. Man bun ramps cray, bitters kale chips butcher vegan bicycle rights poutine tote bag.</p> -->
+            <p>Typewriter austin microdosing occupy af, church-key DIY. Single-origin coffee mustache shabby chic gastropub bushwick microdosing meggings kogi keytar sriracha semiotics pinterest iPhone. Man bun ramps cray, bitters kale chips butcher vegan bicycle rights poutine tote bag.</p>
           </div>
           <div class="vert-container">
             <?php
@@ -228,8 +228,10 @@
               <!-- the loop -->
               <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                 <div class="whitepaper-entry">
-                  <h3 style="text-transform: capitalize;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                  <!-- echo wp_trim_words(get_the_title(), 4, '...'); -->
+                  <a href="<?php the_permalink(); ?>">
+                    <h3 style="text-transform: capitalize;"><?php the_title(); ?></h3>
+                    <!-- echo wp_trim_words(get_the_title(), 4, '...'); -->
+                  </a>
                   <h5>By The Cipher Brief Staff</h5>
                 </div>
               <?php endwhile; ?>

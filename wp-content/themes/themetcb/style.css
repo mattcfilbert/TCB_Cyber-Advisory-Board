@@ -211,10 +211,11 @@ h3 {
   text-overflow: ellipsis;
 }
 
-.whitepaper-entry a {
+.whitepaper-entry a, .whitepaper-entry h3 {
   color: white;
   font-weight: 700;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .whitepaper-entry h5 {
@@ -224,11 +225,7 @@ h3 {
 
 .whitepaper-entry a:hover {
   color: white;
-  text-decoration: none;
-}
-
-.whitepaper-entry:hover {
-  /*border-left: 1px solid #d52340;*/
+  text-decoration: underline;
   /*box-shadow: -2px 0px 0px 0px #d52340;*/
 }
 
