@@ -162,23 +162,22 @@ h3 {
 .explanation {
   width: 35%;
   margin: 10px 10px 0 2px;
-  border-right: 1px solid white;
+  border-right: 2px solid white;
 }
 
 .explanation h5 {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'replica-pro';
   font-weight: 700;
   text-decoration: underline;
-  text-align: center;
+  text-align: left;
 }
 
 .explanation p {
-  padding: 10px 8px 0 0;
-  font-size: 13px;
+  padding: 10px 15px 0 10px;
+  font-size: 14px;
   font-family: 'replica-pro';
   line-height: 1.3;
-
 }
 
 .post-type-archive-whitepapers .rcp_logged_in {
@@ -523,6 +522,7 @@ box-sizing: border-box;
   height: 450px;
   width: 250px;
   overflow: visible;
+  margin: 0 0 0 8%;
 }
 
 .third-section-container {
