@@ -117,6 +117,7 @@
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
+
     'post_type'=>'post',
     'category_name' => 'threat report',
     'post_status'=>'publish',
@@ -124,9 +125,8 @@
   ));
     ?>
 
+
   <?php if ( $wpb_all_query->have_posts() ) : ?>
-
-
 
       <!-- the loop -->
       <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
@@ -161,32 +161,41 @@
     <div id="ciphertake">
       <h1 class="col-title"><a href="/category/ciphertake"> the CIPHER TAKE</a></h1>
       <div class="row">
+        <?php
+          $wpb_all_query = new WP_Query(array(
+            'post_type'=>'post',
+            'category_name' => 'ciphertake',
+            'post_status'=>'publish',
+            'posts_per_page'=> 1
+          ));
+            ?>
 
-<?php
-  $wpb_all_query = new WP_Query(array(
-    'post_type'=>'post',
-    'category_name' => 'ciphertake',
-    'post_status'=>'publish',
-    'posts_per_page'=> 2
-  ));
-    ?>
+          <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-  <?php if ( $wpb_all_query->have_posts() ) : ?>
+              <!-- the loop -->
+              <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+                <div class="ciphertake-entry">
+                  <h3><a href="<?php the_permalink(); ?>">Headline: <?php the_title(); ?></a></h3>
+                    <?php function get_paragraph($string, $paraNum) {
+                      $newVar = wpautop($string);
+                      $entry = explode('<p>', $newVar);
+                      return $entry[$paraNum];
+                    } ?>
+                  <p class="cab-hide"><?php echo get_paragraph(get_the_content(), 1);?> </p>
+                </div>
+                <div class="ciphertake-entry">
+                  <h3><a href="<?php the_permalink(); ?>">The Cipher Take:</a></h3>
+                  <p class="cab-hide"><?php echo get_paragraph(get_the_content(), 2);?> </p>
+                </div>
+              <?php endwhile; ?>
+              <!-- end of the loop -->
 
-      <!-- the loop -->
-      <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-        <div class="ciphertake-entry">
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <p class="cab-hide"><?php echo wp_trim_words( get_the_content(), 85, '...' );?> </p>
-        </div>
-      <?php endwhile; ?>
-      <!-- end of the loop -->
+              <?php wp_reset_postdata(); ?>
 
-      <?php wp_reset_postdata(); ?>
+          <?php else : ?>
+              <p><?php _e( 'Cipher Take posts coming soon!' ); ?></p>
+          <?php endif; ?>
 
-  <?php else : ?>
-      <p><?php _e( 'Cipher Take posts coming soon!' ); ?></p>
-  <?php endif; ?>
     </div>
   </div>
 </div>
@@ -198,16 +207,21 @@
     <div class="vert-container">
       <div class="holder-container">
         <div id="whitepaper">
-          <?php
-          $wpb_all_query = new WP_Query(array(
-            'post_type'=> 'whitepapers',
-            'post_status'=> 'publish',
-            'posts_per_page'=> 3,
-            'orderby' => 'date',
-            'order' => 'DESC'
-          ));
+          <div class="holder-container inside-whitepaper">
+          <div class="explanation">
+            <h5>What Are WhitePapers?</h5>
+            <!-- <p>Typewriter austin microdosing occupy af, church-key DIY. Single-origin coffee mustache shabby chic gastropub bushwick microdosing meggings kogi keytar sriracha semiotics pinterest iPhone. Man bun ramps cray, bitters kale chips butcher vegan bicycle rights poutine tote bag.</p> -->
+          </div>
+          <div class="vert-container">
+            <?php
+            $wpb_all_query = new WP_Query(array(
+              'post_type'=> 'whitepapers',
+              'post_status'=> 'publish',
+              'posts_per_page'=> 3,
+              'orderby' => 'date',
+              'order' => 'DESC'
+            ));
             ?>
-
           <?php if ( $wpb_all_query->have_posts() ) : ?>
 
               <!-- the loop -->
@@ -225,6 +239,8 @@
           <?php else : ?>
               <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
           <?php endif; ?>
+        </div>
+        </div>
         </div>
 
         <!-- Meet Our Board -->
