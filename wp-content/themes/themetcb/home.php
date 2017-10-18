@@ -113,7 +113,7 @@
     <!-- Threats -->
     <div class="col">
     <div id="threat-report">
-      <h1 class="col-title"><a href="/category/threat-report">THREAT Report</a></h1>
+      <h1 class="col-title"><a href="/category/threat-report">THREAT stream</a></h1>
       <?php
   // the query
   $wpb_all_query = new WP_Query(array(
@@ -211,7 +211,7 @@
           <div class="holder-container inside-whitepaper">
           <div class="explanation">
             <h5>What Are WhitePapers?</h5>
-            <!-- <p>Typewriter austin microdosing occupy af, church-key DIY. Single-origin coffee mustache shabby chic gastropub bushwick microdosing meggings kogi keytar sriracha semiotics pinterest iPhone. Man bun ramps cray, bitters kale chips butcher vegan bicycle rights poutine tote bag.</p> -->
+            <p>The Cipher Brief adds a layer of analysis to our reporting by identifying areas of agreement and disagreement by Cyber Advisory Board members and producing a White Paper that is available only to subscribers.</p>
           </div>
           <div class="vert-container">
             <?php
@@ -228,8 +228,10 @@
               <!-- the loop -->
               <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
                 <div class="whitepaper-entry">
-                  <h3 style="text-transform: capitalize;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                  <!-- echo wp_trim_words(get_the_title(), 4, '...'); -->
+                  <a href="<?php the_permalink(); ?>">
+                    <h3 style="text-transform: capitalize;"><?php the_title(); ?></h3>
+                    <!-- echo wp_trim_words(get_the_title(), 4, '...'); -->
+                  </a>
                   <h5>By The Cipher Brief Staff</h5>
                 </div>
               <?php endwhile; ?>
@@ -262,7 +264,7 @@
         <!-- Promo Blocks -->
         <div class="promo_blocks">
           <h3>How to Subscribe</h3>
-          <p>The Cipher Brief adds a layer of analysis to our reporting by identifying areas of agreement and disagreement by Cyber Advisory Board members and producing a White Paper that is available to subscribers. For more information about a Cyber Advisory Board subscription, click <a href="https://www.thecipherbrief.com/subscribe">here.</a></p>
+          <p>A subscription to the Cyber Advisory Board delivers exclusive access to the Cipher Brief's cyber products, including white papers, weekly newsletter, and events across the country. For more information about a Cyber Advisory Board subscription, click <a href="https://www.tcbconference.com/cyber-advisory-board">here</a>.</p>
         </div>
         <div class="promo_blocks">
           <h3>Annual Corporate Sponsorship</h3>
@@ -277,7 +279,8 @@
     </div>
 
     <div class="col-ad">
-      <div class="sidebar_ad2" id="side_ad2">AD SPACE 250x450 </div>
+      <div class="sidebar_ad2" id="side_ad2">
+      </div>
     </div>
 
   </div>
