@@ -6337,6 +6337,12 @@ input[type="search"] {
   .holder-container h3, .holder-container .author_name {
     font-size: 90%!important;
   }
+  .col-title a {
+    font-size: 70%;
+  }
+  #our_latest_news h3 a, #cyber-advisor-column-entry h3 a, .threat-report-entry h3 a {
+    font-size: 100%;
+  }
 }
 
 
